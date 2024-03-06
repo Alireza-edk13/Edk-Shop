@@ -1,0 +1,702 @@
+@import "./variables.css";
+@import "./default.css";
+@import "./header.css";
+@import "./productBox.css";
+@import "./footer.css";
+
+
+.main {
+    margin-top: 0;
+}
+
+.nav {
+    position: unset;
+}
+
+/* ================= pages ================== */
+.pages {
+    background-color: var(--main-backgrond-color);
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.pages span {
+    margin: 0 1rem;
+    color: #6e6e6e;
+    cursor: context-menu;
+}
+
+.pages a {
+    color: #6e6e6e;
+    font-family: 'Roboto Medium';
+    transition: color 250ms ease;
+}
+
+.pages a:hover {
+    color: var(--main-color);
+}
+
+.pages a:last-child {
+    color: var(--main-color);
+}
+
+
+/* =================== product ===================*/
+
+.shop-single {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.shop-single-imgBox {
+    width: 100%;
+    height: 98%;
+    border: 0.2rem solid var(--main-backgrond-color);
+}
+
+.shop-single-imgBox img {
+    width: 100%;
+    height: 100%;
+}
+
+/* .shop-single-info {
+} */
+
+
+.shop-single-info h2 {
+    font-family: 'Roboto Medium';
+    font-size: 3rem;
+    color: var(--main-color)
+}
+
+.shop-single-brand {
+    padding: 1rem 0;
+}
+
+.shop-single-brand a {
+    color: var(--main-color);
+    text-transform: lowercase;
+}
+
+.shop-single-rating svg {
+    color: var(--main-color);
+}
+
+.dis-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+
+/* =========== midbox ================ */
+
+.shop-single-midBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+.shop-single-price {
+    font-family: 'Roboto Medium';
+    color: var(--main-color);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.shop-single-old {
+    text-decoration: line-through;
+    color: var(--gray);
+    margin: 0 2rem;
+}
+
+.shop-single-dis {
+    color: var(--gray);
+}
+
+
+.shop-single-descrip {
+    margin-top: 2rem;
+    line-height: 3rem;
+    max-width: 67rem;
+}
+
+.shop-single-short-info {
+    margin-top: 4rem;
+}
+
+.shop-single-short-info ul li {
+    font-size: 1.3rem;
+    color: var(--gray);
+}
+
+.shop-single-short-info ul li i {
+    color: var(--main-color);
+    margin-right: .5rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+/* =========== bottombox ================ */
+
+/* ======= color ========= */
+
+.shop-single-color {
+    display: flex;
+    align-items: center;
+}
+
+.shop-single-color {
+    margin-top: 3rem;
+}
+
+.shop-single-color-filter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.shop-single-color-filter li {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: 0 .5rem;
+    text-align: center;
+    color: transparent;
+    cursor: pointer;
+    position: relative;
+
+}
+.shop-single-color-filter li::before {
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: -3.5px;
+    right: 0;
+    content: '';
+}
+.shop-single-color-filter li.active-color::before{
+   background-color: var(--main-color);
+}
+.product-color-red {
+    background-color: red;
+}
+
+.product-color-yellow {
+    background-color: yellow;
+}
+
+.product-color-white {
+    background-color: white;
+    border: 0.2rem solid #eee;
+}
+
+.product-color-orange {
+    background-color: orange;
+}
+
+.product-color-cyan {
+    background-color: crimson;
+}
+
+.product-color-green {
+    background-color: green;
+}
+
+.product-color-purple {
+    background-color: purple;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+/* ======= size ========= */
+
+.shop-single-size {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.shop-single-size-filter {
+    display: flex;
+    align-items: center;
+}
+
+.shop-single-size-filter li {
+    border: 0.1rem solid #eee;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.size-active {
+    background-color: var(--main-color);
+    color: var(--main-txt-color-white);
+}
+
+/* ===================== shop btns ================= */
+
+.shop-single-add {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.shop-single-btn {
+    margin: 0;
+    width: 26rem;
+}
+.shopSingle-removeAndnum{
+    display: none;
+    align-items: center;
+}
+.shop-single-btn-remove{
+    background-color: red;
+    margin: 0 3rem;
+    width: 14rem;
+    height: 4rem;
+    font-size: 1.7rem;
+}
+.pos-r {
+    position: relative;
+}
+
+.shop-single-options {
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    position: absolute;
+    z-index: 2;
+    top: 1rem;
+    left: 2rem;
+}
+
+.shop-single-option {
+    background-color: var(--main-backgrond-color);
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: 0.4rem;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.shop-single-option svg {
+    color: var(--main-txt-color-black);
+    width: 2rem;
+    height: 2rem;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.shop-single-option:hover {
+    background-color: var(--main-color);
+}
+
+.shop-single-option:hover svg {
+    color: var(--main-txt-color-white);
+}
+
+.not-jus {
+    justify-content: unset;
+}
+
+.shop-single-add .number-box-reduce,
+.number-box-plus {
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+}
+
+.shop-single-add .number-box-num {
+    font-size: 2rem;
+}
+
+
+.product-extraInfo {
+    font-size: 1.2rem;
+    margin-top: 6.3rem;
+    padding-top: 3rem;
+    border-top: 0.2rem solid #eee;
+}
+
+.product-extraInfo li {
+    margin-bottom: 0.5rem;
+}
+
+.product-extraInfo li a {
+    color: var(--main-color);
+    margin-left: 0.5rem;
+}
+
+.product-extraInfo li span {
+    color: #11B76B;
+    margin-left: 0.5rem;
+}
+
+
+
+/* ===================== swiper =================== */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper2 {
+    height: 80%;
+    width: 100%;
+}
+
+.mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next {
+    color: var(--main-color);
+}
+
+.swiper-button-prev {
+    color: var(--main-color);
+}
+
+/* ================ shop-single-description ================= */
+
+
+.shop-single-description {
+    margin-bottom: 8rem;
+}
+
+.des-btnBox {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid #eee;
+}
+
+.des-btnBox li {
+    font-size: 1.7rem;
+    font-family: 'Roboto Medium';
+    cursor: pointer;
+    position: relative;
+}
+
+
+.des-btnBox li::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    height: 0.2rem;
+    background-color: var(--main-color);
+    bottom: -11px;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 250ms ease;
+}
+
+.additionalInfo {
+    margin: 0 4rem;
+}
+
+.des-inner {
+    padding-top: 3rem;
+}
+
+.des-inner-description,
+.des-inner-additionalInfo,
+.shop-single-review {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+
+.des-inner-description p,
+.des-inner-additionalInfo p {
+    line-height: 3rem;
+    color: var(--gray);
+}
+
+
+.shop-single-list .title {
+    margin-bottom: 1.5rem;
+    color: var(--main-txt-color-black);
+    font-size: 1.7rem;
+    margin-top: 3rem;
+}
+
+.shop-single-list ul li {
+    margin: 5px 0;
+    list-style: disc;
+    margin-left: 15px;
+    color: var(--gray);
+
+}
+
+.notgray ul li {
+    color: var(--gray);
+}
+
+.notgray ul li span {
+    color: var(--main-txt-color-black);
+    margin-right: .5rem;
+}
+
+.relatedItems {
+    margin-bottom: 8rem;
+    background-color: var(--main-backgrond-color);
+}
+
+/*=========== comment ============= */
+.shop-single-comment {
+    display: none;
+}
+
+.blog-comments-single {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin-top: 50px;
+    position: relative;
+    background-color: var(--main-backgrond-color);
+
+}
+
+.shop-single-review .blog-comments-single {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.blog-comments-content {
+    padding: 0 0 0 20px;
+}
+
+.blog-comments-content p {
+    line-height: 3rem;
+    margin: 1rem 0;
+}
+
+.shop-single-review .blog-comments-content h5 {
+    font-size: 17px;
+    font-family: 'Roboto Medium';
+    margin-bottom: 5px;
+}
+
+.blog-comments-content span {
+    font-size: 14px;
+    color: var(--main-color);
+    margin: 1rem 0 1.5rem;
+}
+
+.shop-single-review .blog-comments-content i {
+    margin-right: 5px;
+    color: var(--main-color);
+}
+
+.blog-comments-content a {
+    margin-top: 5px;
+    color: var(--main-color);
+    font-size: 1.7rem;
+}
+
+.shop-single-review .review-rating {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.shop-single-review .review-rating svg {
+    color: var(--main-color);
+}
+
+.blog-comments-single img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.rep {
+    padding-left: 3rem;
+    margin-left: 10rem;
+}
+
+
+.write-review-form {
+    margin: 5rem 0;
+}
+.form-rat{
+    margin-left: 4rem;
+}
+.review-title {
+    font-size: 2rem;
+    border-bottom: 0.2rem solid var(--main-backgrond-color);
+    padding: 2rem;
+    font-family: 'Roboto Medium';
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.review-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    height: 0.2rem;
+    background-color: var(--main-color);
+}
+
+.form-box {
+    margin: 0 5rem;
+    position: relative;
+}
+
+.form-control {
+    padding-left: 2rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: var(--main-backgrond-color);
+    margin: 2rem 0;
+    font-size: 1.7rem;
+}
+
+.form-box input {
+    height: 4rem;
+    padding: 2rem 3rem;
+}
+
+.form-box textarea {
+    resize: vertical;
+    max-height: 25rem;
+    min-height: 16rem;
+    padding: 3rem;
+}
+
+.form-label {
+    font-family: 'Roboto Medium';
+}
+
+.review-rating-form {
+    position: absolute;
+}
+
+.form-check-input {
+    width: 1em;
+    height: 1em;
+    margin-top: 0.4em;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    appearance: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.write-review-form .form-check-input[type="radio"] {
+    background-image: url('../img/star.svg');
+    border: unset;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    margin: 0;
+}
+
+.float-end {
+    display: flex;
+    justify-content: end;
+    margin-right: 5rem;
+}
+
+.float-end button {
+    border: none;
+    outline: none;
+}
+
+
+
+/* helper class */
+
+.desBtn--active::after {
+    visibility: visible !important;
+    opacity: 1 !important;
+    /* color: #6e6e6e; */
+}
+
+.des-inner--active {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
