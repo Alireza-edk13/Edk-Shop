@@ -426,7 +426,7 @@ header.insertAdjacentHTML('beforeend',`<div class="nav">
             </a>
         </div>
         <div class="btn">
-            <a href="#">
+            <a href="checkout.html">
                 CEACK OUT
             </a>
         </div>

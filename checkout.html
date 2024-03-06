@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendor/font-awesome/all.min.css">
+    <link rel="stylesheet" href="styles/base/reset.css">
+    <link rel="stylesheet" href="styles/base/font.css">
+    <link rel="stylesheet" href="styles/base/grid.css">
+    <link rel="stylesheet" href="styles/checkout.css">
+    <link rel="stylesheet" href="styles/base/responsive.css">
+</head>
+<body>
+
+    <header></header>
+    <main>
+        <section class="pages">
+            <div class="container">
+                <a href="#">Home</a>
+                <span>></span>
+                <a href="#">Checkout</a>
+            </div>
+        </section>
+        <section class="qustion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="toggle_info">
+                            <span><i class="far fa-user mr-5"></i><span class="text-muted">Already have an account?</span> <a href="#">Click here to login</a></span>
+                        </div>
+                        <div class="panel-collapse login_form collapse show" id="loginform">
+                            <div class="panel-body">
+                                <p class="mb-30 font-sm">If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing &amp; Shipping section.</p>
+                                <form method="post">
+                                    <div class="form-group">
+                                        <input type="text" name="email" placeholder="Username Or Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password" placeholder="Password">
+                                    </div>
+                                    <div class="login_footer form-group">
+                                        <div class="chek-form">
+                                            <div class="custome-checkbox">
+                                                <input class="form-check-input" type="checkbox" name="checkbox" id="remember" value="">
+                                                <label class="form-check-label" for="remember"><span>Remember me</span></label>
+                                            </div>
+                                        </div>
+                                        <a href="#">Forgot password?</a>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-md btn-rounded" name="login">Log in</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="toggle_info">
+                            <span><i class="far fa-gem mr-5"></i><span class="text-muted">Have a coupon?</span> <a href="#">Click here to enter your code</a></span>
+                        </div>
+                        <div class="panel-collapse coupon_form collapse show" id="coupon">
+                            <div class="panel-body">
+                                <p class="mb-30 font-sm">If you have a coupon code, please apply it below.</p>
+                                <form method="post">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Enter Coupon Code...">
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn  btn-rounded btn-md" name="login">Apply Coupon</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="vendor/font-awesome/all.min.js"></script>
+    <script src="vendor/sweetAlert-js/sweetalert2.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/shopCart.js"></script>
+    <script src="scripts/footer.js"></script>
+</body>
+</html>

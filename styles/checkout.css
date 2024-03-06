@@ -1,0 +1,135 @@
+@import "./variables.css";
+@import "./default.css";
+@import "./header.css";
+@import "./productBox.css";
+@import "./footer.css";
+
+main {
+    margin-bottom: 35rem;
+}
+
+.nav {
+    position: unset;
+}
+
+/* ================= pages ================== */
+.pages {
+    background-color: var(--main-backgrond-color);
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.pages span {
+    margin: 0 1rem;
+    color: #6e6e6e;
+    cursor: context-menu;
+}
+
+.pages a {
+    color: #6e6e6e;
+    font-family: 'Roboto Medium';
+    transition: color 250ms ease;
+}
+
+.pages a:hover {
+    color: var(--main-color);
+}
+
+.pages a:last-child {
+    color: var(--main-color);
+}
+
+.toggle_info {
+    padding: 2rem;
+    background-color: var(--main-backgrond-color);
+    border-radius: 1rem;
+    border: 1px solid #eee;
+    font-size: 1.4rem;
+}
+.toggle_info a {
+    color: var(--main-color);
+}
+.mr-5 {
+    margin-right: 5px;
+    color: var(--main-color);
+}
+.text-muted {
+    color: #8e8e90;
+}
+
+.login_form .panel-body, .coupon_form .panel-body {
+    border: 1px solid #eee;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+.font-sm {
+    font-size: 13px;
+}
+.panel-body p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 5px;
+    color: #4f5d77;
+}
+.form-group input {
+    background: #f4f5f9;
+    border: 2px solid #f4f5f9;
+    height: 45px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-left: 20px;
+    font-size: 13px;
+    color: #4f5d77;
+    width: 100%;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.login_footer {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.custome-checkbox .form-check-label {
+    position: relative;
+    cursor: pointer;
+    color: #687188;
+    padding: 0;
+    vertical-align: middle;
+}
+.custome-checkbox .form-check-label::before {
+    content: "";
+    border: 2px solid #ced4da;
+    height: 17px;
+    width: 17px;
+    margin: 0px 8px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+.custome-checkbox input[type="checkbox"] + .form-check-label::after {
+    content: "";
+    width: 11px;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    opacity: 0;
+    height: 6px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: translateY(-65%) rotate(-45deg);
+    transform: translateY(-65%) rotate(-45deg);
+}
+.custome-checkbox .form-check-label span {
+    vertical-align: middle;
+}
