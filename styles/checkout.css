@@ -5,7 +5,7 @@
 @import "./footer.css";
 
 main {
-    margin-bottom: 35rem;
+    margin-bottom: 20rem;
 }
 
 .nav {
@@ -192,7 +192,8 @@ main {
 .shopCart-contentEmpty{
     position: absolute;
     display: none ;
-    left: 37%;
+    top: 11%;
+    right: 6%;
 }
 
 /* send info ================================================= */
@@ -254,9 +255,33 @@ main {
 }
 .fx-gr{
     flex-grow: 1;
+    outline: none;
+    border: none;
 }
 .title-ship{
     color: var(--main-color);
     font-size: 2.5rem;
     margin: 4rem 0;
+}
+
+.mr-1{
+    margin: 1rem 0;
+}
+.pass-checkout ,.billing-address-form{
+    height: 0;
+    overflow: hidden;
+    transition: all 380ms ease 80ms;
+}
+.pass-checkout.active{
+    height: 7rem;
+    margin: 2rem 0;
+}
+.billing-address-form.active{
+    height: 80rem;
+}
+textarea{
+    resize: vertical; 
+    overflow: auto;
+    min-height: 10rem;
+    max-height: 30rem;
 }
