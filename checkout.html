@@ -22,19 +22,19 @@
                 <a href="#">Checkout</a>
             </div>
         </section>
-        <section class="qustion">
+        <section class="qustion-box">
             <div class="container">
-                <div class="row">
+                <div class="row bor-botoom">
                     <div class="col-lg-6">
                         <div class="toggle_info">
-                            <span><i class="far fa-user mr-5"></i><span class="text-muted">Already have an account?</span> <a href="#">Click here to login</a></span>
+                            <span><i class="far fa-user mr-5 "></i><span class="text-muted">Already have an account?</span> <a href="#" data-name="loginform">Click here to login</a></span>
                         </div>
-                        <div class="panel-collapse login_form collapse show" id="loginform">
+                        <div class="panel-collapse login_form collapse " id="loginform">
                             <div class="panel-body">
                                 <p class="mb-30 font-sm">If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing &amp; Shipping section.</p>
                                 <form method="post">
                                     <div class="form-group">
-                                        <input type="text" name="email" placeholder="Username Or Email">
+                                        <input type="text" name="email" placeholder="Username Or Email" autocomplete="off">
                                     </div>
                                     <div class="form-group">
                                         <input type="password" name="password" placeholder="Password">
@@ -49,7 +49,9 @@
                                         <a href="#">Forgot password?</a>
                                     </div>
                                     <div class="form-group">
-                                        <button class="btn btn-md btn-rounded" name="login">Log in</button>
+                                         <div class="btn">
+                                            <a href="#">login</a>
+                                         </div>
                                     </div>
                                 </form>
                             </div>
@@ -57,9 +59,9 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="toggle_info">
-                            <span><i class="far fa-gem mr-5"></i><span class="text-muted">Have a coupon?</span> <a href="#">Click here to enter your code</a></span>
+                            <span><i class="far fa-gem mr-5"></i><span class="text-muted">Have a coupon?</span> <a href="#" data-name="coupon">Click here to enter your code</a></span>
                         </div>
-                        <div class="panel-collapse coupon_form collapse show" id="coupon">
+                        <div class="panel-collapse coupon_form collapse" id="coupon">
                             <div class="panel-body">
                                 <p class="mb-30 font-sm">If you have a coupon code, please apply it below.</p>
                                 <form method="post">
@@ -67,7 +69,9 @@
                                         <input type="text" placeholder="Enter Coupon Code...">
                                     </div>
                                     <div class="form-group">
-                                        <button class="btn  btn-rounded btn-md" name="login">Apply Coupon</button>
+                                        <div class="btn">
+                                            <a href="#">Apply Coupon</a>
+                                         </div>
                                     </div>
                                 </form>
                             </div>
@@ -83,7 +87,7 @@
     <script src="vendor/font-awesome/all.min.js"></script>
     <script src="vendor/sweetAlert-js/sweetalert2.js"></script>
     <script src="scripts/header.js"></script>
-    <script src="scripts/shopCart.js"></script>
+    <script src="scripts/checkout.js"></script>
     <script src="scripts/footer.js"></script>
 </body>
 </html>
