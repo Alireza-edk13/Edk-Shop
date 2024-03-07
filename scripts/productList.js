@@ -5,7 +5,6 @@
 // footer
 // import { productArray } from "./productArray.js";
 
-
 ///////////////////////////// Add product from array to Dom //////////////////////////////
 
 let producListSec = document.querySelector('.producListSec')

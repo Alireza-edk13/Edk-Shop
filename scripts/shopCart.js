@@ -1,4 +1,6 @@
 
+// ================== checkout list =============================
+
 let shopCartContent = document.querySelector('.shopCart-content')
 
 
