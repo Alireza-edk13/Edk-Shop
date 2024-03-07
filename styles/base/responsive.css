@@ -29,14 +29,17 @@
     .offer_info div {
         margin-top: .8rem;
     }
-    .menu-product-dropdown{
+
+    .menu-product-dropdown {
         width: 90%;
         right: 3.5rem;
     }
-    .mr-top li{
+
+    .mr-top li {
         margin-top: 1rem;
     }
-    .wrapper{
+
+    .wrapper {
         padding: 1.2rem;
     }
 }
@@ -50,6 +53,7 @@
     .logo a {
         font-size: 1.7rem;
     }
+
     .nav-option__img {
         width: 4rem;
         height: 3rem;
@@ -87,7 +91,7 @@
     .offer_info span {
         font-size: 1.2rem;
     }
-   
+
 }
 
 @media only screen and (max-width: 1100px) {
@@ -96,7 +100,7 @@
     }
 
     /* nav */
-   
+
 
     .nav-menu__items {
         font-size: 1.4rem;
@@ -106,6 +110,9 @@
         padding: 0 1rem
     }
 
+    .shopCart-summery {
+        margin-left: auto;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -113,7 +120,7 @@
         max-width: 720px;
     }
 
-    
+
     /* nav */
     .logo a {
         font-size: 2.7rem;
@@ -168,13 +175,15 @@
         margin-top: 20px;
     }
 
-    .mg-top{
+    .mg-top {
         margin-top: 6rem;
     }
-    
+
     .product-pages {
         margin: 5rem auto 5rem;
     }
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -270,27 +279,44 @@
         align-items: center;
         padding: 10px;
     }
+
     .blog-comments-content {
         padding: 0 0 0 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .shop-single-review .review-rating {
-        right: 0px ;
+        right: 0px;
         top: -26px;
     }
+
     .rep {
         margin-left: 5rem;
     }
+
     .shop-single-review .blog-comments-content i {
         margin-right: 0px;
     }
+
     .form-box {
         margin: 0;
     }
+
     .float-end {
         margin-right: 0;
+    }
+
+    .shopCart-summery {
+        width: auto;
+    }
+    .width-num {
+        width: 3rem;
+        height: 3rem;
+    }
+    .toggle-mr{
+        margin: 1rem 0;
     }
 }
 
@@ -373,13 +399,16 @@
         left: auto;
         flex-direction: column;
     }
-    .row-del{
-        margin:0;
+
+    .row-del {
+        margin: 0;
     }
-    .row-del>*{
+
+    .row-del>* {
         padding: 0;
     }
-    .row-del-flex{
+
+    .row-del-flex {
         display: block;
     }
 }
@@ -485,9 +514,10 @@
 
     /* offer1 */
 
-    .offer{
+    .offer {
         margin-top: 1rem;
     }
+
     .offer img {
         height: auto;
     }
@@ -507,7 +537,7 @@
         font-size: 1.5rem;
     }
 
-    .shop-single-btn{
+    .shop-single-btn {
         width: 14rem;
         height: 4rem;
         font-size: 1.7rem;
@@ -515,11 +545,13 @@
 
 
     .productList-fillter {
-       display: block;
+        display: block;
     }
+
     .sortBtn {
         margin-top: 2rem;
     }
+
     .sort-option {
         top: 8rem;
     }
@@ -585,25 +617,35 @@
     .item-sc-info a p {
         font-size: 1.4rem;
     }
-    .number-box-reduce, .number-box-plus {
+
+    .number-box-reduce,
+    .number-box-plus {
         width: 2rem;
     }
+
     .number-box-num {
         margin: 0px 0.5rem;
     }
+
     .item-sc-info div p {
         font-size: 1.3rem;
         margin-left: 1.5rem;
     }
 
-    
-    .shop-single-btn{
+
+    .shop-single-btn {
         width: 14rem;
         height: 4rem;
         font-size: 1.7rem;
     }
-    .des-btnBox li a{
+
+    .des-btnBox li a {
         font-size: 1.4rem;
+    }
+
+    .width-num {
+        width: 2.7rem;
+        height: 2.7rem;
     }
 }
 
@@ -667,15 +709,20 @@
         height: 4rem;
         font-size: 1.3rem;
     }
-    .swal2-popup{
+
+    .swal2-popup {
         font-size: 1.3rem !important;
     }
 
     .additionalInfo {
         margin: 0 2.5rem !important;
     }
+
     .additionalInfoa a {
         font-size: 1.3rem;
+    }
+    .toggle_info{
+        font-size: 1.2rem;
     }
 }
 
@@ -683,9 +730,11 @@
     .container {
         max-width: 100%;
     }
+
     .logo a {
         font-size: 2.3rem;
     }
+
     /* offer */
     .offer_info {
         padding-left: 2.5rem;
@@ -695,6 +744,7 @@
     .poster-info h4 {
         font-size: 2rem;
     }
+
     .des-btnBox li a {
         font-size: 1.3rem;
     }

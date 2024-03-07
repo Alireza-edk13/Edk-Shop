@@ -5,38 +5,38 @@ let shopCartContent = document.querySelector('.shopCart-content')
 function createProductCart(productArray) {
     shopCartContent.innerHTML = ''
     productArray.forEach((product) => {
-        shopCartContent.insertAdjacentHTML('beforeend', ` <div class="shopCart-item">
-        <div class="shopCart-img-box">
+        shopCartContent.insertAdjacentHTML('beforeend', `<div class="shopCart-item row">
+        <div class="shopCart-img-box col-6 col-md-2">
             <img src="${product.img}" alt="product">
         </div>
-        <div class="shopCart-name">
+        <div class="shopCart-name col-6 col-md-3">
             <h5>${product.name}</h5>
             <p><span>Type:</span>${product.colction}</p>
             <p><span>Color:</span>Black</p>
         </div>
-        <div class="shopCart-Oldprice">
+        <div class="shopCart-Oldprice col-3 col-md-2">
             <p>$${product.oldPrice}</p>
         </div>
-        <div class="shopCart-num">
+        <div class="shopCart-num col-4 col-md-2">
             <div class="number-box not-jus">
-                <button class="number-box-reduce" onclick="reduceProductCount(${product.id})">-</button>
-                <span class="number-box-num">${product.count}</span>
-                <button class="number-box-plus" onclick="plusProductCount(${product.id})">+</button>
+                <button class="number-box-reduce width-num" onclick="reduceProductCount(${product.id})">-</button>
+                <span class="number-box-num ">${product.count}</span>
+                <button class="number-box-plus width-num" onclick="plusProductCount(${product.id})">+</button>
             </div>
         </div>
-        <div class="shopCart-Newprice">
+        <div class="shopCart-Newprice col-3 col-md-2">
             <p>$${product.price}</p>
         </div>
-        <div class="delete-item" onclick = "removeProductFromBasket(${product.id})">
+        <div class="delete-item col-2 col-md-1" onclick = "removeProductFromBasket(${product.id})">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"></path>
             </svg>
     
-        </div>
-    </div>`)
+        </div>`)
     })
 }
 
+ 
 
 ///////////////////////////// Add product to userbasket  //////////////////////////////
 

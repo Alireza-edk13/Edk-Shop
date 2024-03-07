@@ -133,10 +133,10 @@ main {
     color: #687188;
 }
 .panel-collapse.show{
-    height:40rem;
+    height:45rem;
 }
 
-/*==================================== price summery */
+/*==================================== price summery ==================== */
 
 .shopCart-summery{
     width: 37rem;

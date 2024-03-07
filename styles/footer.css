@@ -49,6 +49,7 @@
     font-size: 1.7rem;
     color: var(--main-txt-color-black);
     padding: 1rem 0 1rem 3rem;
+    background-color: var(--main-txt-color-white);
 }
 
 .newsleter-btn {

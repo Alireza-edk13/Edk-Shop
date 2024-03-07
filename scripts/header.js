@@ -4,7 +4,7 @@
 
 let header = document.querySelector('header')
 
-header.insertAdjacentHTML('beforeend',`<div class="nav">
+header.insertAdjacentHTML('beforeend', `<div class="nav">
 <div class="logo">
     <!-- <a href="#">electme</a> -->
     <a href="index.html">
@@ -420,11 +420,9 @@ header.insertAdjacentHTML('beforeend',`<div class="nav">
         </div>
     </div>
     <div class="item-sc-btns">
-        <div class="btn">
-            <a href="shopCart.html">
-                VIEW CART
-            </a>
-        </div>
+               <div class="btn">
+                    <a href="shopCart.html"> VIEW CART</a>
+                </div>
         <div class="btn">
             <a href="checkout.html">
                 CEACK OUT

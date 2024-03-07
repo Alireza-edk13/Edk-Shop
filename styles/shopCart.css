@@ -76,8 +76,6 @@ main {
     border-radius: 1rem;
 }
 .shopCart-img-box{
-    width: 10rem;
-    height: 10rem;
     /* border: 0.2rem solid rgba(0, 0, 0, 0.08);  */
     border-radius: 1rem;
 }
@@ -85,9 +83,6 @@ main {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
-}
-.shopCart-name{
-    width: 20rem;
 }
 .shopCart-name h5{
     font-family: 'Roboto Medium';
@@ -104,31 +99,24 @@ main {
     margin-right: 0.5rem;
     margin-top: 0.4rem;
 }
-.shopCart-Oldprice , .shopCart-Newprice{
+.shopCart-Oldprice , .shopCart-Newprice ,.delete-item{
     font-family: 'Roboto Medium';
-    width: 5rem;
+    text-align: center;
 }
 .shopCart-Newprice{
     color: var(--main-color);
-}
-.shopCart-num{
-    width: 10rem;
-}
-
-.delete-item{
-    width: 3rem;
 }
 
 .number-box-reduce, .number-box-plus {
     font-size: 2rem;
     background-color: var(--main-backgrond-color);
     border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
     text-align: center;
     border: none;
     cursor: pointer;
 }
+
+
 
 
 .shopCart-summery{
@@ -175,6 +163,9 @@ main {
     display: flex;
     align-items: end !important;
     justify-content: end !important;
+}
+.liBtn div{
+    flex-grow: 1;
 }
 .liBtn a{
     font-size: 1.4rem !important;
