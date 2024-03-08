@@ -22,7 +22,7 @@
     }
 
     .info {
-        padding: 7rem 0 0 5rem;
+        padding: 1rem 0 0 5rem;
     }
 
     /* offer */
@@ -201,13 +201,15 @@
 
     /* main */
     .slide1 {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .slide1-img {
-        margin-left: 5rem;
+        margin: 2em 0;
     }
-
+    .info {
+        padding: 2rem 0 3rem;
+    }
     /* banner */
 
     .banner-item {
@@ -353,10 +355,6 @@
         margin: 0;
     }
 
-    .slide1-img {
-        margin-left: 4rem;
-    }
-
     /* info */
     .info-about-process__box {
         padding: 2rem 0;
@@ -425,55 +423,16 @@
         display: none;
     }
 
-
+    .descrption {
+        max-width: 33rem;
+    }
+    .product-title{
+        font-size: 3.8rem;
+    }
 
     .nav-option__search {
         width: 20rem;
     }
-
-    /* main */
-    .slide1 {
-        flex-direction: row-reverse;
-    }
-
-    .slide1-img {
-        width: 36rem;
-        height: 17rem;
-        margin-left: 0rem;
-    }
-
-    .info {
-        padding: 5rem 0 0 2rem;
-    }
-
-    .persent-title {
-        font-size: 1.3rem;
-    }
-
-    .product-title {
-        font-size: 2.2rem;
-    }
-
-    .descrption {
-        line-height: 1.6rem;
-        font-size: 1.1rem;
-        max-width: 34rem;
-    }
-
-    .btn {
-        width: 9rem;
-        height: 3.3rem;
-        font-size: 1.2rem;
-    }
-
-    .btn svg {
-        width: 1.4rem;
-    }
-
-    :root {
-        --swiper-navigation-size: 25px;
-    }
-
     /* banner */
 
     .banner-items {
@@ -559,33 +518,8 @@
 
 @media only screen and (max-width: 430px) {
     .product-title {
-        font-size: 1.9rem;
+        font-size: 3.5rem;
     }
-
-    /* main */
-    .descrption {
-        font-size: 1rem;
-    }
-
-    .btn {
-        width: 8rem;
-        height: 3.3rem;
-        font-size: 1.1rem;
-    }
-
-    .banner-item-info {
-        top: 13%;
-        padding-left: 2.2rem;
-    }
-
-    .box-info {
-        text-align: center;
-    }
-
-    .info-about-process__box {
-        flex-direction: column;
-    }
-
     /* offer1 */
     .offer_info span {
         font-size: 1.3rem;
@@ -653,20 +587,8 @@
     .container {
         max-width: 100%;
     }
-
-    /* main */
-    .product-title {
-        font-size: 1.6rem;
-    }
-
     .descrption {
-        font-size: 0.9rem;
-    }
-
-    .slide1-img {
-        width: 31rem;
-        height: 14rem;
-        margin-left: 0rem;
+        max-width: 26rem;
     }
 
     .poster-info p {
