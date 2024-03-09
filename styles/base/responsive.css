@@ -425,6 +425,9 @@
     .main{
         margin-top: 8rem;
     }
+    .swiper-button-next:after, .swiper-button-prev:after{
+        font-size: 3rem;
+    }
 
 }
 

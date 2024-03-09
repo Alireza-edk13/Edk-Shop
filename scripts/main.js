@@ -510,3 +510,5 @@ blogArray.forEach((blog) => {
     </div>
 </div>`)
 })
+
+// =================== info about process ==========================
