@@ -325,6 +325,9 @@
     .toggle-mr{
         margin: 1rem 0;
     }
+    .info-about-process__box{
+        text-align: center;
+    }
 }
 
 @media only screen and (width: 768px) {
@@ -380,6 +383,7 @@
     .box-icon {
         width: 5rem;
         height: 5rem;
+        margin-bottom: 1rem;
     }
 
     .poster-info h5 {
@@ -451,11 +455,12 @@
     .banner-items {
         flex-direction: column;
         display: flex;
+        margin-top: 1rem;    
     }
 
     .banner-item {
         height: 100%;
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
 
     .banner-item:first-child {
@@ -603,7 +608,9 @@
     .descrption {
         max-width: 26rem;
     }
-
+    .banner-item-info-des {
+        font-size: 1.6rem;
+    }
     .poster-info p {
         padding: 0.2rem 0;
     }
