@@ -245,15 +245,15 @@
     align-items: center;
     border-radius: 1rem;
     margin-top: 2.6rem;
-    transition: all 180ms ease-in;
     cursor: pointer;
 }
 
-.product-btn {
+.product-btn , .product-hover-item {
     position: relative;
+    transition: all 180ms ease-in;
 }
 
-.product-btn::after {
+.product-btn::after , .product-hover-item::after {
     content: 'Add To Cart';
     bottom: 100%;
     left: 50%;
@@ -272,7 +272,7 @@
     transform: translateX(-50%) translateY(0px);
 }
 
-.product-btn::before {
+.product-btn::before , .product-hover-item::before {
     content: '';
     position: absolute;
     left: calc(50% - 7px);
@@ -288,32 +288,43 @@
     visibility: hidden;
 }
 
-.product-btn svg {
+.product-btn svg , .product-hover-item svg {
     width: 2rem;
     height: 2rem;
     color: var(--main-txt-color-black);
 }
 
-.product-btn:hover {
+.product-btn:hover  , .product-hover-item:hover {
     background-color: var(--main-color);
     transform: translateY(-0.5rem);
 }
 
-.product-btn:hover svg {
+.product-btn:hover svg , .product-hover-item:hover svg {
     color: var(--main-txt-color-white);
 }
 
-.product-btn:hover::after {
+.product-btn:hover::after , .product-hover-item:hover::after {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(-8px);
 }
 
-.product-btn:hover::before {
+.product-btn:hover::before , .product-hover-item:hover::before {
     opacity: 1;
     visibility: visible;
     transform: translateY(-8px);
 }
+.addToFav:hover::after{
+    content: "Add To WishList";
+}
+.quickView:hover::after{
+    content: "Quick View";
+}
+.compare:hover::after{
+    content: "Compare";
+}
+
+
 
 .popular-product .swiper {
     width: 100%;

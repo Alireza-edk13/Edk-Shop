@@ -42,6 +42,7 @@
     .wrapper {
         padding: 1.2rem;
     }
+
     .slide1-img {
         margin: 7rem 5rem 9rem 0;
     }
@@ -94,7 +95,8 @@
     .offer_info span {
         font-size: 1.2rem;
     }
-    .pd-left-main{
+
+    .pd-left-main {
         padding-left: 1.5rem;
     }
 }
@@ -180,10 +182,6 @@
         margin-top: 20px;
     }
 
-    .mg-top {
-        margin-top: 6rem;
-    }
-
     .product-pages {
         margin: 5rem auto 5rem;
     }
@@ -212,9 +210,11 @@
     .slide1-img {
         margin: 2em 0;
     }
+
     .info {
         padding: 2rem 0 3rem;
     }
+
     /* banner */
 
     .banner-item {
@@ -318,14 +318,17 @@
     .shopCart-summery {
         width: auto;
     }
+
     .width-num {
         width: 3rem;
         height: 3rem;
     }
-    .toggle-mr{
+
+    .toggle-mr {
         margin: 1rem 0;
     }
-    .info-about-process__box{
+
+    .info-about-process__box {
         text-align: center;
     }
 }
@@ -419,14 +422,31 @@
         display: block;
     }
 
-    .bg-main{
+    .bg-main {
         background-color: var(--main-backgrond-color);
     }
-    .mg-top{
+
+    .mg-top {
         margin-top: 8rem;
     }
-    .swiper-button-next:after, .swiper-button-prev:after{
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
         font-size: 3rem;
+    }
+
+    .addToFav:hover::after,
+    .quickView:hover::after,
+    .compare:hover::after,
+    .addToFav:hover::before,
+    .quickView:hover::before,
+    .compare:hover::before,.product-btn:hover::before ,.product-btn:hover::after{
+        visibility: hidden;
+        opacity: 0;
+        content: "";
+    }
+    .product-btn:hover{
+        transform: none;
     }
 
 }
@@ -446,19 +466,21 @@
     .descrption {
         max-width: 33rem;
     }
-    .product-title{
+
+    .product-title {
         font-size: 3.8rem;
     }
 
     .nav-option__search {
         width: 20rem;
     }
+
     /* banner */
 
     .banner-items {
         flex-direction: column;
         display: flex;
-        margin-top: 1rem;    
+        margin-top: 1rem;
     }
 
     .banner-item {
@@ -541,6 +563,7 @@
     .product-title {
         font-size: 3.5rem;
     }
+
     /* offer1 */
     .offer_info span {
         font-size: 1.3rem;
@@ -603,13 +626,16 @@
     .container {
         max-width: 100%;
     }
+
     .descrption {
         max-width: 26rem;
     }
+
     .banner-item-info-des {
         font-size: 1.6rem;
         max-width: 15rem;
     }
+
     .poster-info p {
         padding: 0.2rem 0;
     }
@@ -662,7 +688,8 @@
     .additionalInfoa a {
         font-size: 1.3rem;
     }
-    .toggle_info{
+
+    .toggle_info {
         font-size: 1.2rem;
     }
 }
