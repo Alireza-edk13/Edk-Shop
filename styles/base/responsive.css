@@ -422,7 +422,7 @@
     .bg-main{
         background-color: var(--main-backgrond-color);
     }
-    .main{
+    .mg-top{
         margin-top: 8rem;
     }
     .swiper-button-next:after, .swiper-button-prev:after{
@@ -573,11 +573,6 @@
         font-size: 1.4rem;
     }
 
-    .number-box-reduce,
-    .number-box-plus {
-        width: 2rem;
-    }
-
     .number-box-num {
         margin: 0px 0.5rem;
     }
@@ -613,6 +608,7 @@
     }
     .banner-item-info-des {
         font-size: 1.6rem;
+        max-width: 15rem;
     }
     .poster-info p {
         padding: 0.2rem 0;

@@ -4,6 +4,10 @@
 @import "./productBox.css";
 @import "./footer.css";
 
+
+.item-sc-btns{
+    bottom: -1rem;
+}
 /* ======================== main ========================== */
 
 .main {
