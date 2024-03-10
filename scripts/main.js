@@ -79,7 +79,36 @@ swiperProductArray.forEach((product) => {
 
 })
 
+//////////////////////////// add info section //////////////////////////////
 
+offerBoxArray = [
+    {id:1,title:'New Arrivals',des:'Shop Today’s Deals & Offers',img:'./img/offer/offer1.webp'},
+    {id:2,title:'Sale off',des:'Great PlayStation4 Collection',img:'./img/offer/offer2.webp'},
+    {id:3,title:'Smart Offer',des:'Save 20% on iPhone 12',img:'./img/offer/offer3.webp'}
+]
+
+let offerBox = document.querySelector('.offer-boxDiv')
+
+offerBoxArray.forEach((product) =>{
+    offerBox.insertAdjacentHTML('beforeend',`<div class="col-12 col-md-4 col-lg-4">
+    <div class="offer">
+        <img src="${product.img}" alt="offer-img">
+        <div class="offer_info">
+            <span>${product.title}</span>
+            <h4>${product.des}</h4>
+            <div>
+                <a href="#">Shop now</a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="w-6 h-6">
+                    <path fill-rule="evenodd"
+                        d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>`)
+})
 
 
 
