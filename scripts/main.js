@@ -24,6 +24,74 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     }
 });
+
+// /////////////////////////// create product for slide ////////////////////
+
+swiperProductArray = [
+    {
+        id: 1, present: 'UP TO 50% OFF', firstline: 'UP TO 50% OFF', colorline: 'Edk', endline: 'Shopping',
+        des: 'There are many variations of passages orem psum availablebut the majority have suffered alterationin some form by injected humour.',
+        img: './img/slider/hero-1.webp'
+    },
+    {
+        id: 2, present: 'UP TO 50% OFF', firstline: 'UP TO 50% OFF', colorline: 'Edk', endline: 'Shopping',
+        des: 'There are many variations of passages orem psum availablebut the majority have suffered alterationin some form by injected humour.',
+        img: './img/slider/hero-2.webp'
+    },
+    {
+        id: 3, present: 'UP TO 50% OFF', firstline: 'UP TO 50% OFF', colorline: 'Edk', endline: 'Shopping',
+        des: 'There are many variations of passages orem psum availablebut the majority have suffered alterationin some form by injected humour.',
+        img: './img/slider/hero-3.webp'
+    }
+]
+
+let swiperWrapper = document.querySelector('.swiper-wrapper')
+
+swiperProductArray.forEach((product) => {
+    swiperWrapper.insertAdjacentHTML('beforeend', ` <div class="swiper-slide">
+    <div class="slide1">
+        <div class="slide1-img col-12 col-md-5">
+            <img src="${product.img}" alt="img">
+        </div>
+        <div class="info col-12 col-md-7">
+            <h4 class="persent-title">${product.present}</h4>
+            <h2 class="product-title">
+                <span>${product.firstline}</span>
+                <div><span class="product-title-Electme">${product.colorline}</span> ${product.endline}</div>
+            </h2>
+            <p class="descrption">
+                ${product.des}
+            </p>
+            <div class="btn">
+                <a href="#">
+                    Shop Now
+                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd"
+                        d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>`)
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //////////////////////////// btn scroll to top  /////////////////////////
 
 
@@ -390,12 +458,12 @@ categoryArray.forEach((category) => {
 // ====================== comment =======================
 
 const commentArray = [
-    { id: 1, img: 'img/person/person1.webp' , name: 'Eli Martin' },
-    { id: 2, img: 'img/person/person2.webp' , name: 'Nic Ramos' },
-    { id: 3, img: 'img/person/person3.webp' , name: 'Heruli Nez' },
-    { id: 4, img: 'img/person/person4.webp' , name: 'Moa Casli' },
-    { id: 5, img: 'img/person/person1.webp' , name: 'Eli Martin' },
-    { id: 6, img: 'img/person/person3.webp' , name: 'Heruli Nez' },
+    { id: 1, img: 'img/person/person1.webp', name: 'Eli Martin' },
+    { id: 2, img: 'img/person/person2.webp', name: 'Nic Ramos' },
+    { id: 3, img: 'img/person/person3.webp', name: 'Heruli Nez' },
+    { id: 4, img: 'img/person/person4.webp', name: 'Moa Casli' },
+    { id: 5, img: 'img/person/person1.webp', name: 'Eli Martin' },
+    { id: 6, img: 'img/person/person3.webp', name: 'Heruli Nez' },
 ]
 
 let commentBox = document.querySelector('.commentBox')
@@ -464,9 +532,9 @@ commentArray.forEach((Comment) => {
 // ====================== Blog =======================
 
 const blogArray = [
-    { id: 1, img: 'img/blog/blog1.webp'},
-    { id: 2, img: 'img/blog/blog2.webp'},
-    { id: 3, img: 'img/blog/blog3.webp'}
+    { id: 1, img: 'img/blog/blog1.webp' },
+    { id: 2, img: 'img/blog/blog2.webp' },
+    { id: 3, img: 'img/blog/blog3.webp' }
 ]
 
 let blogContainer = document.querySelector('.blogContainer')

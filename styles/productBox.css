@@ -254,7 +254,6 @@
 }
 
 .product-btn::after , .product-hover-item::after {
-    content: 'Add To Cart';
     bottom: 100%;
     left: 50%;
     position: absolute;
@@ -281,7 +280,7 @@
     border: 7px solid transparent;
     border-top-color: var(--main-color);
     z-index: 2;
-    margin-bottom: -13px;
+    margin-bottom: -12px;
     transition-delay: .1s;
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
     opacity: 0;
@@ -323,7 +322,9 @@
 .compare:hover::after{
     content: "Compare";
 }
-
+.product-btn::after{
+    content: 'Add To Cart';
+}
 
 
 .popular-product .swiper {
