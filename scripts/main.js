@@ -109,11 +109,6 @@ offerBoxArray.forEach((product) =>{
     </div>
 </div>`)
 })
-
-
-
-
-
 //////////////////////////// btn scroll to top  /////////////////////////
 
 

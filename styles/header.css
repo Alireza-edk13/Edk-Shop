@@ -59,6 +59,7 @@
 
 .nav-menu__item--list {
     transition: all 180ms ease-in 80ms;
+    cursor: pointer;
 }
 
 .nav-menu__item--list a {
@@ -714,21 +715,28 @@
     display: none;
     cursor: pointer;
 }
-
+.nav-menu-mobile .logo a{
+    color: var(--main-color);
+    font-size: 4rem;
+}
+.nav-menu-mobile .logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
 .nav-menu-mobile {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 0rem;
+    left: -35rem;
     width: 35rem;
     z-index: 101;
     background-color: var(--main-txt-color-white);
     transition: all 180ms ease-in;
-
 }
 
 .nav-menu-mobile__items {
-    padding: 0 3rem 3rem 3rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -743,32 +751,56 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border-bottom: 0.1rem solid;
+    border-bottom: 0.1rem solid var(--main-color);
 }
 
 .nav-menu-mobile__item a {
     font-size: 1.7rem;
     color: var(--main-color);
+    font-family: 'Roboto Medium';
 }
 
-.nav-menu-mobile__item span {
+.nav-menu-mobile__item span , .menuMobile-tiny li span{
     background-color: var(--main-color);
-    color: var(--main-color);
+    color: var(--main-txt-color-white);
     border-radius: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-.nav-menu-mobile .logo a{
-    color: var(--main-color);
-    font-size: 4rem;
+.menuMobile-tiny {
+    width: 100%;
+    background-color: var(--main-backgrond-color);
+    height: 0;
+    overflow: hidden;
+    transition: all 380ms ease 80ms;
 }
-.nav-menu-mobile .logo{
+.menuMobile-tiny h5{
+    padding: 1rem;
+    font-family: 'Roboto Medium';
+
+}
+.menuMobile-tiny li {
+    margin-bottom: 1rem;
     display: flex;
-    justify-content: center;
-    margin-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.menuMobile-tiny li:first-child{
+    padding-top: 1rem;
+}
+.menuMobile-tiny li a{
+    color: var(--main-color);
+}
+.menuMobile-tiny-mini{
+    height: 0;
+    overflow: hidden;
+}
+.menuMobile-tiny.active{
+    height: 27rem;
+    margin-bottom: 1rem;
 }

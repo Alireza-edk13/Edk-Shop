@@ -362,7 +362,7 @@
     .nav__btn-line,
     .nav__btn-line::after,
     .nav__btn-line::before {
-        width: 3rem;
+        width: 2.5rem;
         margin: 0;
     }
 
@@ -584,7 +584,7 @@
         font-size: 1.5rem;
     }
 
-    .shoppingCart {
+    .shoppingCart , .nav-menu-mobile {
         width: 27rem;
     }
 
