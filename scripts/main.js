@@ -114,13 +114,6 @@ offerBoxArray.forEach((product) =>{
 
 
 
-
-
-
-
-
-
-
 //////////////////////////// btn scroll to top  /////////////////////////
 
 

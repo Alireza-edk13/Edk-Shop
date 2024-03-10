@@ -374,66 +374,6 @@
 }
 
 
-/* ==================== menu mobile ================= */
-
-.nav-option-menu {
-    display: none;
-    cursor: pointer;
-}
-
-.nav-menu-mobile {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: -25rem;
-    width: 25rem;
-    z-index: 101;
-    background-color: var(--main-txt-color-white);
-    transition: all 180ms ease-in;
-
-}
-
-.nav-menu-mobile__items {
-    padding: 0 3rem 3rem 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    font-size: 1.7rem;
-    color: var(--main-color);
-}
-
-.nav-menu-mobile__item {
-    margin-bottom: 1.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    border-bottom: 0.1rem solid;
-}
-
-.nav-menu-mobile__item a {
-    font-size: 1.7rem;
-    color: var(--main-color);
-}
-
-.nav-menu-mobile__item span {
-    background-color: var(--main-color);
-    color: var(--main-color);
-    border-radius: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-menu-mobile__logo-img {
-    width: 19rem;
-    margin: 3rem;
-    border-bottom: 0.3rem solid var(--main-color);
-    padding-bottom: 2rem;
-}
 
 /* =================== nav btn ===================== */
 
@@ -767,4 +707,68 @@
 
 .swal2-popup {
     font-size: 1.6rem !important;
+}
+/* ==================== menu mobile ================= */
+
+.nav-option-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-menu-mobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0rem;
+    width: 35rem;
+    z-index: 101;
+    background-color: var(--main-txt-color-white);
+    transition: all 180ms ease-in;
+
+}
+
+.nav-menu-mobile__items {
+    padding: 0 3rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.nav-menu-mobile__item {
+    margin-bottom: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 0.1rem solid;
+}
+
+.nav-menu-mobile__item a {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.nav-menu-mobile__item span {
+    background-color: var(--main-color);
+    color: var(--main-color);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-menu-mobile .logo a{
+    color: var(--main-color);
+    font-size: 4rem;
+}
+.nav-menu-mobile .logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
 }

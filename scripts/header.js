@@ -532,7 +532,7 @@ function openMenu() {
         menuMobileIcon.classList.add('nav__btn--open')
         isOpen = true
     } else {
-        menuMobile.style.left = '-25rem'
+        menuMobile.style.left = '-35rem'
         menuMobileIcon.classList.remove('nav__btn--open')
         isOpen = false
     }
