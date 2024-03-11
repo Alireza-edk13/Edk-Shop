@@ -109,6 +109,32 @@ offerBoxArray.forEach((product) =>{
     </div>
 </div>`)
 })
+
+//////////////////////////// add brand sec ///////////////////////////////
+
+const brandArray = [
+    {id:1,img:'./img/brand/4.webp'},
+    {id:2,img:'./img/brand/5.webp'},
+    {id:3,img:'./img/brand/6.webp'},
+    {id:4,img:'./img/brand/7.webp'},
+    {id:5,img:'./img/brand/10.webp'},
+    {id:6,img:'./img/brand/11.webp'}
+]
+let brandsBox = document.querySelector('.brands-box')
+
+brandArray.forEach(brand => {
+    brandsBox.insertAdjacentHTML('beforeend',`  <div class="col-6 col-md-3 col-lg-3 col-xl-2">
+    <div class="brand">
+        <a href="#">
+            <img src="${brand.img}" alt="brandImg">
+        </a>
+    </div>
+</div>`)
+})
+
+
+
+
 //////////////////////////// btn scroll to top  /////////////////////////
 
 
@@ -595,5 +621,3 @@ blogArray.forEach((blog) => {
     </div>
 </div>`)
 })
-
-// =================== info about process ==========================
