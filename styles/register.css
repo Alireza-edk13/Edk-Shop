@@ -1,0 +1,8 @@
+@import "./login.css";
+
+main{
+    margin:3rem 0;
+}
+.form-check-label a{
+    color: var(--main-color);
+}

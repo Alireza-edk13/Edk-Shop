@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/base/reset.css">
     <link rel="stylesheet" href="styles/base/font.css">
     <link rel="stylesheet" href="styles/base/grid.css">
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/register.css">
     <link rel="stylesheet" href="styles/base/responsive.css">
 </head>
 
@@ -23,38 +23,38 @@
             </div>
         </section>
     </header>
-    <main>
+    <main class="mg-top-reg">
         <form action="#" class="base-form">
             <div class="logo-login">
                 <a href="index.html">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <h3>Edk-Shop</h3>
                 </a>
-                <h4>Login with your Edk-Shop account</h4>
+                <h4>Create your free Edk-Shop account</h4>
             </div>
             <div class="box">
-                <input type="text" id="username" class="txt" placeholder="Email" autocomplete="off">
+                <input type="text" id="username" class="txt" placeholder="Name"  autocomplete="off">
+            </div>
+            <div class="box">
+                <input type="text" id="email" class="txt" placeholder="Email"  autocomplete="off">
                 <p class="input-require">Your Username is not strong enough</p>
             </div>
             <div class="box">
-                <input type="text" id="password" class="txt" placeholder="Password" autocomplete="off">
+                <input type="text" id="password" class="txt" placeholder="Password"  autocomplete="off">
                 <p class="input-require">Your Password is not strong enough</p>
             </div>
             <div class="box-bottom">
                 <div class="custome-checkbox mr-1">
                     <input class="form-check-input" type="checkbox" name="checkbox" id="createAccount" value="">
-                    <label class="form-check-label" for="createAccount"><span>Remeber Me</span></label>
+                    <label class="form-check-label" for="createAccount">I agree with the<a href="#">Terms Of Service</a></label>
                 </div>
-                <span><a href="#">
-                        Forgot Password?
-                    </a></span>
             </div>
 
             <button type="submit" class="btn"><a href="#">
                     <i class="fa fa-sign-in"></i>
                     Log in</a>
             </button>
-            <p class="under-btn-txt">Don't have an account?<a href="register.html">Register</a></p>
+            <p class="under-btn-txt">Already have an account?<a href="login.html">Login</a></p>
 
             <div class="social-login">
                 <span class="or">or</span>
@@ -69,7 +69,6 @@
     </main>
     <footer></footer>
     <script src="vendor/font-awesome/all.min.js"></script>
-    <script src="scripts/login.js"></script>
     <script src="scripts/footer.js"></script>
 </body>
 
