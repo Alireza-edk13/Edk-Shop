@@ -14,61 +14,65 @@
 </head>
 
 <body>
-    <header>
+    <header></header>
+    <main>
         <section class="pages">
             <div class="container">
-                <a href="index.html">Home</a>
+                <a href="#">Home</a>
                 <span>></span>
-                <a href="register.html">Login</a>
+                <a href="#">Shop Cart</a>
             </div>
         </section>
-    </header>
-    <main>
-        <form action="#" class="base-form">
-            <div class="logo-login">
-                <a href="index.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <h3>Edk-Shop</h3>
-                </a>
-                <h4>Login with your Edk-Shop account</h4>
-            </div>
-            <div class="box">
-                <input type="text" id="username" class="txt" placeholder="Email" autocomplete="off">
-                <p class="input-require">Your Username is not strong enough</p>
-            </div>
-            <div class="box">
-                <input type="text" id="password" class="txt" placeholder="Password" autocomplete="off">
-                <p class="input-require">Your Password is not strong enough</p>
-            </div>
-            <div class="box-bottom">
-                <div class="custome-checkbox mr-1">
-                    <input class="form-check-input" type="checkbox" name="checkbox" id="createAccount" value="">
-                    <label class="form-check-label" for="createAccount"><span>Remeber Me</span></label>
+        <div class="form-box">
+            <form action="#" class="base-form">
+                <div class="logo-login">
+                    <a href="index.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h3>Edk-Shop</h3>
+                    </a>
+                    <h4>Login with your Edk-Shop account</h4>
                 </div>
-                <span><a href="#">
-                        Forgot Password?
-                    </a></span>
-            </div>
-
-            <button type="submit" class="btn"><a href="#">
-                    <i class="fa fa-sign-in"></i>
-                    Log in</a>
-            </button>
-            <p class="under-btn-txt">Don't have an account?<a href="register.html">Register</a></p>
-
-            <div class="social-login">
-                <span class="or">or</span>
-                <p class="under-btn-txt">Continue with social media</p>
-                <div class="social-login-list">
-                    <a href="#" class="fb-auth"><i class="fab fa-facebook-f"></i> Facebook</a>
-                    <a href="#" class="gl-auth"><i class="fab fa-google"></i> Google</a>
-                    <a href="#" class="tw-auth"><i class="fab fa-twitter"></i> Twitter</a>
+                <div class="box">
+                    <input type="text" id="username" class="txt" placeholder="Email" autocomplete="off">
+                    <p class="input-require">Your Username is not strong enough</p>
                 </div>
-            </div>
-        </form>
+                <div class="box">
+                    <input type="text" id="password" class="txt" placeholder="Password" autocomplete="off">
+                    <p class="input-require">Your Password is not strong enough</p>
+                </div>
+                <div class="box-bottom">
+                    <div class="custome-checkbox mr-1">
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="createAccount" value="">
+                        <label class="form-check-label" for="createAccount"><span>Remeber Me</span></label>
+                    </div>
+                    <span><a href="#">
+                            Forgot Password?
+                        </a></span>
+                </div>
+    
+                <button type="submit" class="btn"><a href="#">
+                        <i class="fa fa-sign-in"></i>
+                        Log in</a>
+                </button>
+                <p class="under-btn-txt">Don't have an account?<a href="register.html">Register</a></p>
+    
+                <div class="social-login">
+                    <span class="or">or</span>
+                    <p class="under-btn-txt">Continue with social media</p>
+                    <div class="social-login-list">
+                        <a href="#" class="fb-auth"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="#" class="gl-auth"><i class="fab fa-google"></i> Google</a>
+                        <a href="#" class="tw-auth"><i class="fab fa-twitter"></i> Twitter</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
     </main>
     <footer></footer>
     <script src="vendor/font-awesome/all.min.js"></script>
+    <script src="vendor/sweetAlert-js/sweetalert2.js"></script>
+    <script src="scripts/header.js"></script>
     <script src="scripts/login.js"></script>
     <script src="scripts/footer.js"></script>
 </body>

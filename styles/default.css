@@ -61,3 +61,55 @@ ul {
     width: 2.5rem;
     color: var(--main-txt-color-white);
 }
+
+
+.btn {
+    margin-top: 2.5rem;
+    background-color: var(--main-color);
+    width: 14rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.7rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: "";
+    height: 300px;
+    width: 300px;
+    background: var(--main-txt-color-black);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) scale(0);
+    transition: .5s cubic-bezier(.25, .46, .45, .94);
+    z-index: 1;
+}
+
+.btn:hover::before {
+    transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+.btn:hover svg {
+    margin-left: 1.2rem;
+}
+
+.btn a {
+    color: var(--main-txt-color-white);
+    z-index: 2;
+
+}
+
+.btn svg {
+    width: 2rem;
+    margin-left: 0.5rem;
+    color: var(--main-txt-color-white);
+    z-index: 2;
+    transition: .5s cubic-bezier(.25, .46, .45, .94);
+}

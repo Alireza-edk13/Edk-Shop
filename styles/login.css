@@ -1,16 +1,16 @@
 @import "./variables.css";
 @import "./default.css";
+@import "./header.css";
 @import "./footer.css";
-
 
 /* ================= pages ================== */
 .pages {
+    background-color: var(--main-backgrond-color);
+    height: 6rem;
     display: flex;
     align-items: center;
-    margin-top: 1rem;
-    position: absolute;
-    left: 2rem;
-    top: 0;
+    margin-top: 8rem;
+    margin-bottom: 0;
 }
 
 .pages span {
@@ -37,12 +37,13 @@
 
 /* ================= login ===================== */
 
-main{
+.form-box{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 7rem 0;
+    margin: 10rem 0;
 }
+
 .logo-login {
     display: flex;
     align-items: center;
@@ -78,6 +79,8 @@ main{
     padding: 3rem;
     box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
     border-radius: 1rem;
+    border-top: 0.2rem solid var(--main-color);
+    border-bottom: 0.2rem solid var(--main-color);
 }
 
 .form-name {
@@ -115,55 +118,9 @@ button {
     color: #687188;
 }
 
-.btn {
-    margin-top: 2.5rem;
-    background-color: var(--main-color);
+.base-form .btn {
     width: 100%;
     height: 5rem;
-    border-radius: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 1.7rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn::before {
-    content: "";
-    height: 500px;
-    width: 500px;
-    background: var(--main-txt-color-black);
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%) scale(0);
-    transition: .5s cubic-bezier(.25, .46, .45, .94);
-    z-index: 1;
-}
-
-.btn:hover::before {
-    transform: translateY(-50%) translateX(-50%) scale(1);
-}
-
-.btn:hover svg {
-    margin-left: 1.2rem;
-}
-
-.btn a {
-    color: var(--main-txt-color-white);
-    z-index: 2;
-
-}
-
-.btn svg {
-    width: 2rem;
-    margin-left: 0.5rem;
-    color: var(--main-txt-color-white);
-    z-index: 2;
-    transition: .5s cubic-bezier(.25, .46, .45, .94);
 }
 
 .input-require {
