@@ -8,10 +8,6 @@ main {
     margin-bottom: 20rem;
 }
 
-.nav {
-    position: unset;
-}
-
 /* ================= pages ================== */
 .pages {
     background-color: var(--main-backgrond-color);

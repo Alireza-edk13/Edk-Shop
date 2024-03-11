@@ -7,11 +7,6 @@
 .main {
     margin-bottom: 8rem;
 }
-
-.nav {
-    position: unset;
-}
-
 .product {
     border: 0.2rem solid var(--main-backgrond-color);
     margin-top: 3rem;

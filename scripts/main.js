@@ -8,7 +8,7 @@
 
 // ///////////////////////////// slider header //////////////////////////
 
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
@@ -62,7 +62,7 @@ swiperProductArray.forEach((product) => {
             <p class="descrption">
                 ${product.des}
             </p>
-            <div class="btn">
+            <div class="btn dis-no">
                 <a href="#">
                     Shop Now
                 </a>

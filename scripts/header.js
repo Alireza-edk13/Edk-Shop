@@ -241,7 +241,7 @@ header.insertAdjacentHTML('beforeend', ` <div class="nav">
             <ul class="all-product__list">
                 <li><a href="product.html?id=6">Shop Single</a></li>
                 <li class="haveMiniMenu">
-                    <a href="shopCart.html">Shop List
+                    <a href="productList.html">Shop List
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -249,11 +249,12 @@ header.insertAdjacentHTML('beforeend', ` <div class="nav">
                         </svg>
                     </a>
                     <ul class="mini-menu">
-                        <li><a href="shopCart.html">Shop List one</a></li>
-                        <li><a href="shopCart.html">Shop List two</a></li>
+                        <li><a href="productList.html">Shop List one</a></li>
+                        <li><a href="productList.html">Shop List two</a></li>
                     </ul>
                 </li>
                 <li><a href="shopCart.html">Shop Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
                 <li><a href="#">Checkout Complate</a></li>
                 <li><a href="#">Compare</a></li>
             </ul>
@@ -324,88 +325,88 @@ header.insertAdjacentHTML('beforeend', ` <div class="nav">
     <div class="nav-btn">
         <span class="nav__btn-line"></span>
     </div>
-    <div class="nav-menu-mobile">
-        <div class="logo">
-            <a href="index.html">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <h3>Edk-Shop</h3>
-            </a>
-        </div>
-        <ul class="nav-menu-mobile__items">
-            <li class="nav-menu-mobile__item"><a href="#">Home</a></li>
-            <li class="nav-menu-mobile__item"><a href="#">About</a></li>
-            <li class="nav-menu-mobile__item nav-menu__item--list" data-name="page-menuMobile" >
-                <a href="#">Pages</a>
-                <span>+</span>
-            </li>
-            <ul class="menuMobile-tiny page-menuMobile">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Brands</a></li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                    <li>
-                        <a href="#">Testimonials</a>
-                    </li>
-                    <li>
-                        <a href="#">404 Error</a>
-                    </li>
-            </ul>
-            <li class="nav-menu-mobile__item nav-menu__item--list" data-name="account-menuMobile" >
-                <a href="#">Account
+</div>
 
-                </a>
-                <span>+</span>
+</div>
+<div class="nav-menu-mobile">
+<div class="logo">
+    <a href="index.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>Edk-Shop</h3>
+    </a>
+</div>
+<ul class="nav-menu-mobile__items">
+    <li class="nav-menu-mobile__item"><a href="#">Home</a></li>
+    <li class="nav-menu-mobile__item"><a href="#">About</a></li>
+    <li class="nav-menu-mobile__item nav-menu__item--list" data-name="page-menuMobile" >
+        <a href="#">Pages</a>
+        <span>+</span>
+    </li>
+    <ul class="menuMobile-tiny page-menuMobile">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Brands</a></li>
+            <li>
+                <a href="#">Contact Us</a>
             </li>
-            <ul class="menuMobile-tiny account-menuMobile">
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">My Profile</a></li>
-                <li><a href="#">Oreder</a></li>
-                <li><a href="#">Adderss</a></li>
-                <li><a href="#">Sypport Ticket</a></li>
-                <li><a href="#">My Wishlist</a></li>
-                <li><a href="#">Other...</a></li>
-            </ul>
-            <li class="nav-menu-mobile__item nav-menu__item--list" data-name="menu-menuMobile" >
-                <a href="#">Menu
+            <li>
+                <a href="#">Help</a>
+            </li>
+            <li>
+                <a href="#">Testimonials</a>
+            </li>
+            <li>
+                <a href="#">404 Error</a>
+            </li>
+    </ul>
+    <li class="nav-menu-mobile__item nav-menu__item--list" data-name="account-menuMobile" >
+        <a href="#">Account
 
-                </a>
-                <span>+</span>
-            </li>
-            <ul class="menuMobile-tiny menu-menuMobile">
-                <h5>Computer</h5>
-                <ul>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Networking &amp; Internet</a></li>
-                    <li><a href="#">Camera Accessories</a></li>
-                    <li><a href="#">Printers &amp; Ink</a></li>
-                    <li><a href="#">Mobile Accessories</a></li>
-                    <li><a href="#">Cases &amp; Covers</a></li>
-                </ul>
-            </ul>
-            <li class="nav-menu-mobile__item nav-menu__item--list" data-name="shop-menuMobile">
-                <a href="#">Shop
+        </a>
+        <span>+</span>
+    </li>
+    <ul class="menuMobile-tiny account-menuMobile">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">My Profile</a></li>
+        <li><a href="#">Oreder</a></li>
+        <li><a href="#">Adderss</a></li>
+        <li><a href="#">Sypport Ticket</a></li>
+        <li><a href="#">My Wishlist</a></li>
+    </ul>
+    <li class="nav-menu-mobile__item nav-menu__item--list" data-name="menu-menuMobile" >
+        <a href="#">Menu
 
-                </a>
-                <span>+</span>
-            </li>
-            <ul class="menuMobile-tiny shop-menuMobile">
-                <li><a href="product.html?id=6">Shop Single</a></li>
-                <li class="menuMobile-tiny-child">
-                    <a href="shopCart.html">Shop List</a>
-                </li>
-                <li><a href="shopCart.html">Shop Cart</a></li>
-                <li><a href="#">Checkout Complate</a></li>
-                <li><a href="#">Compare</a></li>
-            </ul>
-            <li class="nav-menu-mobile__item"><a href="#">Blog</a></li>
-            <li class="nav-menu-mobile__item"><a href="#">Content</a></li>
+        </a>
+        <span>+</span>
+    </li>
+    <ul class="menuMobile-tiny menu-menuMobile">
+        <ul>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Networking &amp; Internet</a></li>
+            <li><a href="#">Camera Accessories</a></li>
+            <li><a href="#">Printers &amp; Ink</a></li>
+            <li><a href="#">Mobile Accessories</a></li>
+            <li><a href="#">Cases &amp; Covers</a></li>
         </ul>
-    </div>
+    </ul>
+    <li class="nav-menu-mobile__item nav-menu__item--list" data-name="shop-menuMobile">
+        <a href="#">Shop
 
+        </a>
+        <span>+</span>
+    </li>
+    <ul class="menuMobile-tiny shop-menuMobile">
+        <li><a href="product.html?id=6">Shop Single</a></li>
+        <li class="menuMobile-tiny-child">
+            <a href="shopCart.html">Shop List</a>
+        </li>
+        <li><a href="shopCart.html">Shop Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="#">Checkout Complate</a></li>
+        <li><a href="#">Compare</a></li>
+    </ul>
+    <li class="nav-menu-mobile__item"><a href="#">Blog</a></li>
+    <li class="nav-menu-mobile__item"><a href="#">Content</a></li>
+</ul>
 </div>
 <div class="shoppingCart">
     <div class="shoppingCart-box">
@@ -474,7 +475,6 @@ header.insertAdjacentHTML('beforeend', ` <div class="nav">
             </a>
         </div>
     </div>
-</div>
 </div>`)
 
 let divCover = document.createElement('div')
@@ -552,6 +552,7 @@ function openMenu() {
     if (!isOpen) {
         menuMobile.style.left = '0'
         menuMobileIcon.classList.add('nav__btn--open')
+        cover.style.display = 'block'
         isOpen = true
     } else {
         menuMobile.style.left = '-35rem'
@@ -569,7 +570,7 @@ navMenuItemList.forEach(list => {
     list.addEventListener('click', () => {
         let contentId = list.getAttribute('data-name');
         let contentElement = document.querySelector(`.${contentId}`);
-        
+
         if (contentElement.classList.contains('active')) {
             contentElement.classList.remove('active');
         } else {
@@ -580,9 +581,6 @@ navMenuItemList.forEach(list => {
         }
     });
 });
-
-
-
 
 ////////////////////////////  open shopCart //////////////////////////
 
@@ -599,8 +597,6 @@ function openShoppingCart() {
         shoppingCart.style.left = '0'
         isOpenShoppingCart = true
         cover.style.display = 'block'
-        isOpen = true
-        openMenu()
     } else {
         closeShoppingCart()
     }
@@ -609,6 +605,8 @@ function closeShoppingCart() {
     shoppingCart.style.left = '-55rem'
     isOpenShoppingCart = false
     cover.style.display = 'none'
+    menuMobile.style.left = '-35rem'
+    menuMobileIcon.classList.remove('nav__btn--open')
 }
 
 
