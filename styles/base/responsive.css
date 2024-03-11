@@ -568,6 +568,9 @@
     .sort-option {
         top: 8rem;
     }
+    .base-form{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 430px) {
@@ -703,6 +706,10 @@
 
     .toggle_info {
         font-size: 1.2rem;
+    }
+    .social-login-list a {
+        padding: 0.5rem 0.5rem;
+        margin: 0 0.1rem;
     }
 }
 

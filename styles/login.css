@@ -1,0 +1,259 @@
+@import "./variables.css";
+@import "./default.css";
+
+/* ================= pages ================== */
+.pages {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.pages span {
+    margin: 0 1rem;
+    color: #6e6e6e;
+    cursor: context-menu;
+}
+
+.pages a {
+    color: #6e6e6e;
+    font-family: 'Roboto Medium';
+    transition: color 250ms ease;
+}
+
+.pages a:hover {
+    color: var(--main-color);
+}
+
+.pages a:last-child {
+    color: var(--main-color);
+}
+
+
+
+/* ================= login ===================== */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    margin: 1rem 0;
+}
+.logo-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    flex-direction: column;
+}
+
+.logo-login a {
+    display: flex;
+    align-items: center;
+    font-size: 3.7rem;
+    color: var(--main-color);
+    font-family: 'Roboto Medium';
+}
+
+.logo-login a h3 {
+    padding-left: 0.8rem;
+}
+
+.logo-login h4 {
+    font-size: 1.6rem;
+    color: #4f5d77;
+    margin-top: 0.7rem;
+}
+
+
+
+.base-form {
+    width: 40rem;
+    height: 100%;
+    color: var(--main-txt-color-black);
+    padding: 3rem;
+    box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+    border-radius: 1rem;
+}
+
+.form-name {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+input,
+button {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    background-color: var(--main-backgrond-color);
+}
+
+.box {
+    margin-bottom: 2.6rem;
+}
+
+.txt {
+    font-size: 1.4rem;
+    display: block;
+    color: #4f5d77;
+    height: 50px;
+    width: 100%;
+    background-color: var(--main-backgrond-color);
+    padding: 2rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    letter-spacing: 0.32px;
+}
+
+.txt::placeholder {
+    color: #687188;
+}
+
+.btn {
+    margin-top: 2.5rem;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.7rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: "";
+    height: 500px;
+    width: 500px;
+    background: var(--main-txt-color-black);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) scale(0);
+    transition: .5s cubic-bezier(.25, .46, .45, .94);
+    z-index: 1;
+}
+
+.btn:hover::before {
+    transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+.btn:hover svg {
+    margin-left: 1.2rem;
+}
+
+.btn a {
+    color: var(--main-txt-color-white);
+    z-index: 2;
+
+}
+
+.btn svg {
+    width: 2rem;
+    margin-left: 0.5rem;
+    color: var(--main-txt-color-white);
+    z-index: 2;
+    transition: .5s cubic-bezier(.25, .46, .45, .94);
+}
+
+.input-require {
+    font-size: 12px;
+    padding-top: 0.5rem;
+    color: #E65100;
+    display: none;
+}
+
+.box-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-bottom span a {
+    font-size: 1.4rem;
+}
+
+.custome-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.custome-checkbox input {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.custome-checkbox .form-check-label {
+    position: relative;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.under-btn-txt {
+    color: #687188;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.under-btn-txt span {
+    color: var(--main-color);
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+.social-login{
+    border-top: 0.1rem solid var(--main-backgrond-color);
+    position: relative;
+}
+.social-login span{
+    position: absolute;
+    top: -13px;
+    color: #687188;
+    left: 50%;
+}
+.social-login-list {
+    text-align: center;
+}
+.social-login-list a {
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    border-radius: 5em;
+    margin: 0 .5rem;
+}
+.social-login-list .fb-auth {
+    border: 2px solid #3B5998;
+    color: #3B5998;
+    transition: all 180ms ease 80ms;
+}
+.social-login-list .fb-auth:hover {
+    background-color: #3B5998;
+    color: #fff;
+}
+
+.social-login-list .gl-auth {
+    border: 2px solid #DD4B39;
+    transition: all 180ms ease 80ms;
+    color: #DD4B39;
+}
+.social-login-list .gl-auth:hover{
+    background-color: #DD4B39;
+    color: #fff;
+}
+
+.social-login-list .tw-auth {
+    border: 2px solid #55ACEE;
+    transition: all 180ms ease 80ms;
+    color: #55ACEE;
+}
+.social-login-list .tw-auth:hover {
+    color: #fff;
+    background-color: #55ACEE;
+}

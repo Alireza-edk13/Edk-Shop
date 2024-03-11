@@ -21,6 +21,7 @@
     background-color: var(--main-backgrond-color);
     height: 6rem;
     display: flex;
+    margin-top: 8rem;
     align-items: center;
     margin-bottom: 4rem;
 }
