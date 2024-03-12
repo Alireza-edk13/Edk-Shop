@@ -503,26 +503,37 @@ const searchInputBox = document.querySelector('.nav-option__search')
 const searchInput = document.querySelector('.search-input')
 const searchIcon = document.querySelector('.nav-option__search-icon')
 let autocomBox = document.querySelector('.autocom-box')
+
+
 function openSearchBox() {
     searchInputBox.classList.add('nav-option__search-active')
     autocomBox.classList.remove('active')
-    searchInput.focus()
     searchInput.value = ''
 }
-searchIcon.addEventListener('click', openSearchBox)
-searchInputBox.addEventListener('mouseleave', () => {
+function closeSearch() {
     searchInputBox.classList.remove('nav-option__search-active')
-})
+}
+
+
+searchIcon.addEventListener('click', openSearchBox)
+document.body.addEventListener('click', closeSearch);
+
+searchInputBox.addEventListener('click', (event) => {
+    event.stopPropagation();
+});
+searchIcon.addEventListener('click', (event) => {
+    event.stopPropagation();
+});
+
 function search() {
     autocomBox.classList.add('active')
     let availbleItems = productArray.filter(function (item) {
         return item.name.toLowerCase().includes(searchInput.value.toLowerCase())
     })
 
-
     autocomBox.innerHTML = ''
     if (availbleItems.length === 0) {
-        let newLi = document.createElement('div')
+        let newLi = document.createElement('li')
         newLi.innerHTML = 'we dont have your requsted item :('
         newLi.addEventListener('click', function () {
             reset()
@@ -533,10 +544,15 @@ function search() {
             let newLi = document.createElement('li')
             let aLi = document.createElement('a')
             aLi.innerHTML = item.name
-            aLi.setAttribute('href', '#')
             newLi.append(aLi)
             newLi.addEventListener('click', function () {
                 searchInput.value = aLi.textContent
+                let productRequseted = productArray.find(product => {
+                    if (product.name === aLi.textContent) {
+                        return product.id
+                    }
+                })
+                aLi.setAttribute('href', `product.html?id=${productRequseted.id}`)
                 reset()
             })
             autocomBox.append(newLi)
@@ -552,8 +568,22 @@ function search() {
         autocomBox.classList.remove('active')
     }
 }
+function searchWithEnter(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault()
+        let productRequseted = productArray.find(product => {
+            if (product.name.toLocaleLowerCase() === searchInput.value.toLocaleLowerCase()) {
+                return product.id
+            }
+        })
+        if (productRequseted) {
+            location.href = `product.html?id=${productRequseted.id}`
+        }
+    }
+}
 
 searchInput.addEventListener('keyup', search)
+searchInput.addEventListener('keydown', searchWithEnter)
 
 //////////////////////////// open nav mobile //////////////////////////
 

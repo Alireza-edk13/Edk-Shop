@@ -232,6 +232,7 @@
     visibility: hidden;
     transition: all .5s ease-in-out;
     transform: scaleY(0);
+    z-index: 2;
 }
 
 .nav-option__search-active {
@@ -256,7 +257,6 @@
 .nav-option__search div {
     width: 10rem;
     height: 3.5rem;
-    padding-bottom: 0.3rem;
 }
 
 .nav-option__search form svg {
