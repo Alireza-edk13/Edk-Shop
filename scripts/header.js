@@ -1,5 +1,3 @@
-
-
 //////////////////////////// add header to DOM //////////////////////
 
 let header = document.querySelector('header')
@@ -314,7 +312,7 @@ header.insertAdjacentHTML('beforeend', ` <div class="nav">
         <span class="countNum countNumShopCart">0</span>
     </div>
     <div class="nav-option__account nav-option--padding">
-        <a href="#">
+        <a href="login.html">
             <svg class="nav-option__img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -481,6 +479,21 @@ let divCover = document.createElement('div')
 divCover.classList.add('cover')
 document.body.append(divCover)
 
+
+////////////////////////// loader ///////////////////////////////////
+
+// document.body.insertAdjacentHTML('beforeend',`<div class="loader">
+// <img src="img/loading.gif" alt="Loading..." />
+// </div>`)
+
+
+// let imgPreLoad = document.querySelector('.loader')
+
+// function preLoad(){
+//     imgPreLoad.classList.add('hidden')
+// }
+
+// window.addEventListener('load', preLoad)
 
 
 //////////////////////////// serach-Box ////////////////////////////

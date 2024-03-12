@@ -569,6 +569,8 @@
     }
     .base-form{
         width: 100%;
+        border-bottom: none;
+        box-shadow: none;
     }
 }
 
