@@ -405,7 +405,38 @@ header.insertAdjacentHTML('beforeend', ` <div class="nav">
     <li class="nav-menu-mobile__item"><a href="#">Blog</a></li>
     <li class="nav-menu-mobile__item"><a href="#">Content</a></li>
 </ul>
+<div class ='nav-box-mobile'>
+<div class="nav-option__fav-mobile">
+<a href="#">
+    <svg class="nav-option__img-mobile" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round"
+            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+    </svg>
+</a>
 </div>
+<div class="nav-option__account-mobile">
+<a href="login.html">
+    <svg class="nav-option__img-mobile" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+    </svg>
+</a>
+</div>
+<div class="nav-option__exit-mobile">
+<a href="#">
+<svg class="nav-option__img-mobile" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
+</svg>
+
+</a>
+</div>
+</div>
+</div>
+
+
+
 <div class="shoppingCart">
     <div class="shoppingCart-box">
         <div class="top-shoppingCart">
@@ -494,6 +525,7 @@ document.body.append(divCover)
 // }
 
 // window.addEventListener('load', preLoad)
+
 
 
 //////////////////////////// serach-Box ////////////////////////////
@@ -604,6 +636,12 @@ function openMenu() {
     }
 }
 menuMobileIcon.addEventListener('click', openMenu)
+
+/// exit with btn from nav mobile
+
+let exitBtn = document.querySelector('.nav-option__exit-mobile')
+
+exitBtn.addEventListener('click',  closeShoppingCart)
 
 
 ////////////////////// open child menu nav mobile /////////////////////////////////
