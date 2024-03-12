@@ -84,6 +84,21 @@ function createProductCart(productArray) {
 
 createProductCart(productArray)
 
+//////////////////////////// btn scroll to top  /////////////////////////
+const btnScrollUp = document.querySelector('.btn-scroll-up')
+
+function changeScroll() {
+    if (document.documentElement.scrollTop > 500) {
+        btnScrollUp.style.visibility = 'visible'
+        btnScrollUp.style.opacity = '1'
+    } else {
+        btnScrollUp.style.visibility = 'hidden'
+        btnScrollUp.style.opacity = '0'
+    }
+}
+
+document.addEventListener('scroll', changeScroll)
+
 ///////////////////////////// Add product to userbasket  //////////////////////////////
 
 

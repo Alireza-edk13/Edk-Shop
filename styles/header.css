@@ -761,7 +761,7 @@
     align-items: center;
     width: 100%;
     border-bottom: 0.1rem solid var(--main-color);
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
 }
 
 .nav-menu-mobile__item:last-child {
