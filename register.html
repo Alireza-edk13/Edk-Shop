@@ -15,56 +15,67 @@
 
 <body>
     <header></header>
-    <main class="mg-top-reg">
-        <form action="#" class="base-form">
-            <div class="logo-login">
-                <a href="index.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <h3>Edk-Shop</h3>
-                </a>
-                <h4>Create your free Edk-Shop account</h4>
+    <main>
+        <section class="pages">
+            <div class="container">
+                <a href="index.html">Home</a>
+                <span>></span>
+                <a href="register.html">Register</a>
             </div>
-            <div class="box">
-                <input type="text" id="username" class="txt" placeholder="Name"  autocomplete="off">
-            </div>
-            <div class="box">
-                <input type="text" id="email" class="txt" placeholder="Email"  autocomplete="off">
-                <p class="input-require">Your Username is not strong enough</p>
-            </div>
-            <div class="box">
-                <input type="text" id="password" class="txt" placeholder="Password"  autocomplete="off">
-                <p class="input-require">Your Password is not strong enough</p>
-            </div>
-            <div class="box-bottom">
-                <div class="custome-checkbox mr-1">
-                    <input class="form-check-input" type="checkbox" name="checkbox" id="createAccount" value="">
-                    <label class="form-check-label" for="createAccount">I agree with the<a href="#">Terms Of Service</a></label>
+        </section>
+        <div class="form-box">
+            <form action="#" class="base-form">
+                <div class="logo-login">
+                    <a href="index.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h3>Edk-Shop</h3>
+                    </a>
+                    <h4>Create your free Edk-Shop account</h4>
                 </div>
-            </div>
-
-            <button type="submit" class="btn"><a href="#">
-                    <i class="fa fa-sign-in"></i>
-                    Log in</a>
-            </button>
-            <p class="under-btn-txt">Already have an account?<a href="login.html">Login</a></p>
-
-            <div class="social-login">
-                <span class="or">or</span>
-                <p class="under-btn-txt">Continue with social media</p>
-                <div class="social-login-list">
-                    <a href="#" class="fb-auth"><i class="fab fa-facebook-f"></i> Facebook</a>
-                    <a href="#" class="gl-auth"><i class="fab fa-google"></i> Google</a>
-                    <a href="#" class="tw-auth"><i class="fab fa-twitter"></i> Twitter</a>
+                <div class="box">
+                    <input type="text" id="username" class="txt" placeholder="Name" autocomplete="off">
+                    <i class="fa-solid fa-user"></i>
                 </div>
-            </div>
-        </form>
+                <div class="box">
+                    <input type="text" id="email" class="txt" placeholder="Email" autocomplete="off">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p class="input-require">Your Username is not strong enough</p>
+                </div>
+                <div class="box">
+                    <input type="text" id="password" class="txt" placeholder="Password" autocomplete="off">
+                    <i class="fa-solid fa-key"></i>
+                    <p class="input-require">Your Password is not strong enough</p>
+                </div>
+                <div class="box-bottom">
+                    <div class="custome-checkbox mr-1">
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="createAccount" value="">
+                        <label class="form-check-label" for="createAccount">I agree with the<a href="#">Terms Of
+                                Service</a></label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn"><a href="#">
+                        <i class="fa fa-sign-in"></i>
+                        Register</a>
+                </button>
+                <p class="under-btn-txt">Already have an account?<a href="login.html">Login</a></p>
+
+                <div class="social-login">
+                    <span class="or">or</span>
+                    <p class="under-btn-txt">Continue with social media</p>
+                    <div class="social-login-list">
+                        <a href="#" class="fb-auth"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="#" class="gl-auth"><i class="fab fa-google"></i> Google</a>
+                        <a href="#" class="tw-auth"><i class="fab fa-twitter"></i> Twitter</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </main>
     <footer></footer>
     <script src="vendor/font-awesome/all.min.js"></script>
-    <script src="vendor/sweetAlert-js/sweetalert2.js"></script>
-    <script src="scripts/header.js"></script>
     <script src="scripts/login.js"></script>
-    <script src="scripts/footer.js"></script>
 </body>
 
 </html>

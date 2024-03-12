@@ -459,9 +459,6 @@
     .product-btn:hover {
         transform: none;
     }
-    .mg-top-reg{
-        margin-top: 6rem;
-    }
 }
 
 @media only screen and (max-width: 485px) {

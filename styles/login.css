@@ -1,15 +1,12 @@
 @import "./variables.css";
 @import "./default.css";
-@import "./header.css";
-@import "./footer.css";
 
 /* ================= pages ================== */
 .pages {
-    background-color: var(--main-backgrond-color);
     height: 6rem;
     display: flex;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 0rem;
     margin-bottom: 0;
 }
 
@@ -33,15 +30,13 @@
     color: var(--main-color);
 }
 
-
-
 /* ================= login ===================== */
 
 .form-box{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10rem 0;
+    margin: 0;
 }
 
 .logo-login {
@@ -99,8 +94,19 @@ button {
 
 .box {
     margin-bottom: 2.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: var(--main-color);
 }
-
+.box svg{
+    /* padding: 2rem; */
+    position: absolute;
+    right: 1.5rem;
+    top: 2.5rem;
+    font-size: 2rem;
+}
 .txt {
     font-size: 1.4rem;
     display: block;

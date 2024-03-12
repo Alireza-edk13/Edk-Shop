@@ -1,7 +1,7 @@
 @import "./login.css";
 
-main{
-    margin:11rem 0;
+.form-box{
+    margin-bottom: 3rem;
 }
 .form-check-label a{
     color: var(--main-color);
