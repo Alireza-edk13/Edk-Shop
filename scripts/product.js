@@ -134,6 +134,8 @@ productArray.slice(4, 10).forEach((product) => {
     createProductCart(product, relatedProductBox)
 })
 
+
+
 ///////////////////////////// Add product to userbasket  //////////////////////////////
 
 
@@ -319,8 +321,9 @@ function userBasketLangth(userBasket) {
 /////////////// product html page  ////////////
 
 let shopSingleContent = document.querySelector('.shop-singleContent .row')
-
+let pages = document.querySelector('.pages')
 let swiperProductBox = document.querySelectorAll('.swiper-wrapper')
+
 // get the id from url and show the product with same id
 let locationSearchParams = new URLSearchParams(location.search)
 let productId = locationSearchParams.get('id')
@@ -333,6 +336,16 @@ if (productInfo) {
 } else {
     // location.href = ''
 }
+
+pages.insertAdjacentHTML('beforeend', `<div class="container">
+<a href="index.html">Home</a>
+<span>></span>
+<a href="productList.html">Headphone</a>
+<span>></span>
+<a href="#">${productInfo.name}</a>
+</div>`)
+
+
 function productHtmlPageGenerator(productInfo) {
     swiperProductBox.forEach((swiperProduct) => {
         swiperProduct.insertAdjacentHTML('beforeend', ` <div class="swiper-slide">
