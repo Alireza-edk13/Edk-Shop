@@ -6,6 +6,8 @@
 
 // import { productArray } from "./productArray.js";
 
+AOS.init();
+
 // ///////////////////////////// slider header //////////////////////////
 
 let swiper = new Swiper(".mySwiper", {
