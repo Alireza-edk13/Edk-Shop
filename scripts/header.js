@@ -567,6 +567,7 @@ function search() {
     if (availbleItems.length === 0) {
         let newLi = document.createElement('li')
         newLi.innerHTML = 'we dont have your requsted item :('
+        newLi.classList.add('li-not-found')
         newLi.addEventListener('click', function () {
             reset()
         })

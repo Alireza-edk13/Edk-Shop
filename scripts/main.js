@@ -45,17 +45,17 @@ swiperProductArray = [
     {
         id: 1, present: 'UP TO 50% OFF', firstline: 'UP TO 50% OFF', colorline: 'Edk', endline: 'Shopping',
         des: 'There are many variations of passages orem psum availablebut the majority have suffered alterationin some form by injected humour.',
-        img: './img/slider/hero-1.webp'
+        img: './img/slider/hero-1.webp',page:1
     },
     {
         id: 2, present: 'UP TO 50% OFF', firstline: 'UP TO 50% OFF', colorline: 'Edk', endline: 'Shopping',
         des: 'There are many variations of passages orem psum availablebut the majority have suffered alterationin some form by injected humour.',
-        img: './img/slider/hero-2.webp'
+        img: './img/slider/hero-2.webp',page:4
     },
     {
         id: 3, present: 'UP TO 50% OFF', firstline: 'UP TO 50% OFF', colorline: 'Edk', endline: 'Shopping',
         des: 'There are many variations of passages orem psum availablebut the majority have suffered alterationin some form by injected humour.',
-        img: './img/slider/hero-3.webp'
+        img: './img/slider/hero-3.webp',page:5
     }
 ]
 
@@ -65,7 +65,9 @@ swiperProductArray.forEach((product) => {
     swiperWrapper.insertAdjacentHTML('beforeend', ` <div class="swiper-slide">
     <div class="slide1">
         <div class="slide1-img col-12 col-md-5">
-            <img src="${product.img}" alt="img">
+            <a href = 'product.html?id=${product.page}'>
+               <img src="${product.img}" alt="img">
+            </a>
         </div>
         <div class="info col-12 col-md-7">
             <h4 class="persent-title">${product.present}</h4>
@@ -77,7 +79,7 @@ swiperProductArray.forEach((product) => {
                 ${product.des}
             </p>
             <div class="btn dis-no">
-                <a href="#">
+                <a href='product.html?id=${product.page}'>
                     Shop Now
                 </a>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"

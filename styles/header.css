@@ -864,7 +864,6 @@
     border-radius: 50%;
     height: 4.5rem;
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -882,4 +881,11 @@
     bottom: 1rem;
     right: 9px;
     flex-direction: column;
+}
+.li-not-found{
+    color: var(--main-color) !important;
+    text-align: center;
+}
+.li-not-found:hover{
+    color: var(--main-txt-color-white) !important;
 }
