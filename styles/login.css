@@ -1,6 +1,13 @@
 @import "./variables.css";
 @import "./default.css";
 
+body{
+    background-color: var(--main-color);
+}
+/* Scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-txt-color-white);
+}
 /* ================= pages ================== */
 .pages {
     height: 6rem;
@@ -12,22 +19,18 @@
 
 .pages span {
     margin: 0 1rem;
-    color: #6e6e6e;
+    color: var(--main-txt-color-white);
     cursor: context-menu;
 }
 
 .pages a {
-    color: #6e6e6e;
+    color: var(--main-txt-color-white);
     font-family: 'Roboto Medium';
     transition: color 250ms ease;
 }
 
-.pages a:hover {
-    color: var(--main-color);
-}
-
 .pages a:last-child {
-    color: var(--main-color);
+    color: var(--main-txt-color-white);
 }
 
 /* ================= login ===================== */
@@ -37,6 +40,7 @@
     align-items: center;
     justify-content: center;
     margin: 0;
+    background-color: var(--main-color);
 }
 
 .logo-login {
@@ -76,6 +80,7 @@
     border-radius: 1rem;
     border-top: 0.2rem solid var(--main-color);
     border-bottom: 0.2rem solid var(--main-color);
+    background-color: var(--main-txt-color-white);
 }
 
 .form-name {

@@ -12,7 +12,7 @@ body {
     background-color: var(--main-txt-color-white);
 }
 main{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 a {
     text-decoration: none;

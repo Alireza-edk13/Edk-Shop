@@ -47,7 +47,7 @@ header.insertAdjacentHTML('beforeend', ` <div class="nav">
                     </a>
                     <ul class="mini-menu">
                         <li><a href="login.html">Login</a></li>
-                        <li><a href="#">Register</a></li>
+                        <li><a href="register.html">Register</a></li>
                         <li><a href="#">Forgot Password</a></li>
                     </ul>
                 </li>
