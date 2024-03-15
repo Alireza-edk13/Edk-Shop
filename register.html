@@ -33,7 +33,8 @@
                     <h4>Create your free Edk-Shop account</h4>
                 </div>
                 <div class="box">
-                    <input type="text" id="name" class="txt" placeholder="Name" autocomplete="off">
+                    <input type="text" id="username" class="txt" placeholder="Userame" autocomplete="off">
+                    <p class="input-require alertUsername">username is not availble</p>
                     <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="box">
@@ -44,7 +45,6 @@
                 <div class="box">
                     <input type="text" id="email" class="txt" placeholder="Email" autocomplete="off">
                     <i class="fa-solid fa-envelope"></i>
-                    <p class="input-require">Your Username is not strong enough</p>
                 </div>
                 <div class="box">
                     <input type="text" id="password" class="txt" placeholder="Password" autocomplete="off">
@@ -53,13 +53,13 @@
                 </div>
                 <div class="box-bottom">
                     <div class="custome-checkbox mr-1">
-                        <input class="form-check-input" type="checkbox" name="checkbox" id="createAccountBtn" value="">
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="createAccount" value="">
                         <label class="form-check-label" for="createAccount">I agree with the<a href="#">Terms Of
                                 Service</a></label>
                     </div>
                 </div>
 
-                <button type="submit" class="btn"><a href="#">
+                <button type="submit" class="btn" id="createAccountBtn"><a href="#">
                         <i class="fa fa-sign-in"></i>
                         Register</a>
                 </button>
@@ -80,7 +80,8 @@
     </main>
     <footer></footer>
     <script src="vendor/font-awesome/all.min.js"></script>
-    <script src="scripts/login.js"></script>
+    <script src="vendor/sweetAlert-js/sweetalert2.js"></script>
+    <script src="scripts/register.js"></script>
 </body>
 
 </html>

@@ -95,8 +95,7 @@ button {
 .box {
     margin-bottom: 2.6rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     position: relative;
     color: var(--main-color);
 }
@@ -134,8 +133,12 @@ button {
     padding-top: 0.5rem;
     color: #E65100;
     display: none;
+    position: absolute;
+    bottom: -2.5rem;
 }
-
+.alertUsername.active{
+    display: block;
+}
 .box-bottom {
     display: flex;
     justify-content: space-between;
@@ -221,4 +224,10 @@ button {
 .social-login-list .tw-auth:hover {
     color: #fff;
     background-color: #55ACEE;
+}
+.swal2-popup{
+    font-size: 1.5rem !important;
+}
+.btn::before{
+    width: 350px;
 }
