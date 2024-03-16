@@ -169,8 +169,7 @@ main {
 .liBtn svg{
     width: 1.7rem;
 }
-.shopCart-contentEmpty{
-    position: absolute;
-    display: none ;
-    left: 37%;
+
+.shoppingCart-Empty {
+    margin-top: 8rem;
 }
