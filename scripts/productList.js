@@ -164,9 +164,8 @@ function addProductToBasketArray(productId) {
         basketProductsGenerator(userBasket)
         //// show user a toast that product add to basket succesfully 
         toastBox.fire({
-            title: "Another sample of this product has been added",
+            title: "Another has been added",
             icon: "success",
-            width: '50rem'
         })
 
     } else {

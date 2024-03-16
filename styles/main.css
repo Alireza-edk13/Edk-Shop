@@ -60,19 +60,8 @@
 .banner-item-info-link {
     font-family: 'Roboto Medium';
     font-size: 1.4rem;
-    position: relative;
-}
-
-.banner-item-info-link::before {
-    content: "";
-    top: 1.7rem;
-    left: 0rem;
-    margin: auto;
-    width: 100%;
-    height: 0.2rem;
-    background-color: var(--main-txt-color-black);
-    position: absolute;
-    border-radius: 2rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 0.3rem solid;
 }
 
 .slide1 {

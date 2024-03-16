@@ -204,11 +204,9 @@ function addProductToBasketArray(productId) {
         basketProductsGenerator(userBasket)
         //// show user a toast that product add to basket succesfully 
         toastBox.fire({
-            title: "Another sample of this product has been added",
+            title: "Another has been added",
             icon: "success",
-            width: '50rem'
         })
-        console.log(mainProduct.count)
 
     } else {
 
@@ -318,7 +316,7 @@ function userBasketLangth(userBasket) {
     countNumShopCart.innerHTML = userBasket.length
 }
 
-/////////////// product html page  ////////////
+////////////////////////// product html page  ///////////////////////////////
 
 let shopSingleContent = document.querySelector('.shop-singleContent .row')
 let pages = document.querySelector('.pages')
@@ -340,7 +338,7 @@ if (productInfo) {
 pages.insertAdjacentHTML('beforeend', `<div class="container">
 <a href="index.html">Home</a>
 <span>></span>
-<a href="productList.html">Headphone</a>
+<a href="productList.html">${productInfo.colction}</a>
 <span>></span>
 <a href="#">${productInfo.name}</a>
 </div>`)
