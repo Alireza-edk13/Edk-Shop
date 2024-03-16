@@ -347,6 +347,9 @@
         max-width: 100%;
     }
 
+    *{
+        cursor: default !important;
+    }
     /* nav */
     .nav-option__img {
         width: 2.9rem;
