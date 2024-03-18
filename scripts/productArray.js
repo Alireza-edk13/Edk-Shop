@@ -1,22 +1,22 @@
 const productArray = [
     {
         id: 1,
-        img: "./img/product/product-1.webp",
-        colction: "music",
-        name: "Headphone Asus",
-        present: 60,
-        price: 438.45,
-        oldPrice: 310.2,
-        count: 1
-    },
-    {
-        id: 2,
         img: "./img/product/product-2.webp",
         colction: "ACCESSORIES",
         name: "KeyBoard Ultra Bass",
         present: 70,
         price: 252.20,
         oldPrice: 380.2,
+        count: 1
+    },
+    {
+        id: 2,
+        img: "./img/product/product-1.webp",
+        colction: "music",
+        name: "Headphone Asus",
+        present: 60,
+        price: 438.45,
+        oldPrice: 310.2,
         count: 1
     },
     {
