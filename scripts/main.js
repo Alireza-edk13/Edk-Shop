@@ -8,6 +8,17 @@
 
 // AOS.init();
 
+////////////////////////// loader ///////////////////////////////////
+
+function preLoad() {
+    setTimeout(() => {
+        const loading = document.querySelector('.loader')
+        loading.remove()
+    }, 1000);
+}
+
+window.addEventListener("DOMContentLoaded", preLoad)
+
 // ///////////////////////////// slider header //////////////////////////
 
 let swiper = new Swiper(".mySwiper", {
@@ -47,17 +58,17 @@ const swiperProductArray = [
     {
         id: 1, present: 'UP TO 50% OFF', firstline: 'UP TO 50% OFF', colorline: 'Edk', endline: 'Shopping',
         des: 'There are many variations of passages orem psum availablebut the majority have suffered alterationin some form by injected humour.',
-        img: './img/slider/hero-1.webp',page:1
+        img: './img/slider/hero-1.webp', page: 1
     },
     {
         id: 2, present: 'UP TO 50% OFF', firstline: 'UP TO 50% OFF', colorline: 'Edk', endline: 'Shopping',
         des: 'There are many variations of passages orem psum availablebut the majority have suffered alterationin some form by injected humour.',
-        img: './img/slider/hero-2.webp',page:4
+        img: './img/slider/hero-2.webp', page: 4
     },
     {
         id: 3, present: 'UP TO 50% OFF', firstline: 'UP TO 50% OFF', colorline: 'Edk', endline: 'Shopping',
         des: 'There are many variations of passages orem psum availablebut the majority have suffered alterationin some form by injected humour.',
-        img: './img/slider/hero-3.webp',page:5
+        img: './img/slider/hero-3.webp', page: 5
     }
 ]
 
@@ -100,15 +111,15 @@ swiperProductArray.forEach((product) => {
 //////////////////////////// add info section //////////////////////////////
 
 const offerBoxArray = [
-    {id:1,title:'New Arrivals',des:'Shop Today’s Deals & Offers',img:'./img/offer/offer1.webp'},
-    {id:2,title:'Sale off',des:'Great PlayStation4 Collection',img:'./img/offer/offer2.webp'},
-    {id:3,title:'Smart Offer',des:'Save 20% on iPhone 12',img:'./img/offer/offer3.webp'}
+    { id: 1, title: 'New Arrivals', des: 'Shop Today’s Deals & Offers', img: './img/offer/offer1.webp' },
+    { id: 2, title: 'Sale off', des: 'Great PlayStation4 Collection', img: './img/offer/offer2.webp' },
+    { id: 3, title: 'Smart Offer', des: 'Save 20% on iPhone 12', img: './img/offer/offer3.webp' }
 ]
 
 let offerBox = document.querySelector('.offer-boxDiv')
 
-offerBoxArray.forEach((product) =>{
-    offerBox.insertAdjacentHTML('beforeend',`<div class="col-12 col-md-4 col-lg-4">
+offerBoxArray.forEach((product) => {
+    offerBox.insertAdjacentHTML('beforeend', `<div class="col-12 col-md-4 col-lg-4">
     <div class="offer">
         <img src="${product.img}" alt="offer-img">
         <div class="offer_info">
@@ -131,17 +142,17 @@ offerBoxArray.forEach((product) =>{
 //////////////////////////// add brand sec ///////////////////////////////
 
 const brandArray = [
-    {id:1,img:'./img/brand/4.webp'},
-    {id:2,img:'./img/brand/5.webp'},
-    {id:3,img:'./img/brand/6.webp'},
-    {id:4,img:'./img/brand/7.webp'},
-    {id:5,img:'./img/brand/10.webp'},
-    {id:6,img:'./img/brand/11.webp'}
+    { id: 1, img: './img/brand/4.webp' },
+    { id: 2, img: './img/brand/5.webp' },
+    { id: 3, img: './img/brand/6.webp' },
+    { id: 4, img: './img/brand/7.webp' },
+    { id: 5, img: './img/brand/10.webp' },
+    { id: 6, img: './img/brand/11.webp' }
 ]
 let brandsBox = document.querySelector('.brands-box')
 
 brandArray.forEach(brand => {
-    brandsBox.insertAdjacentHTML('beforeend',`  <div class="col-6 col-md-3 col-lg-3 col-xl-2">
+    brandsBox.insertAdjacentHTML('beforeend', `  <div class="col-6 col-md-3 col-lg-3 col-xl-2">
     <div class="brand">
         <a href="#">
             <img src="${brand.img}" alt="brandImg">

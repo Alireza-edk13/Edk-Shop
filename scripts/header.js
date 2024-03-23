@@ -510,24 +510,6 @@ let divCover = document.createElement('div')
 divCover.classList.add('cover')
 document.body.append(divCover)
 
-
-////////////////////////// loader ///////////////////////////////////
-
-// document.body.insertAdjacentHTML('beforeend',`<div class="loader">
-// <img src="img/loading.gif" alt="Loading..." />
-// </div>`)
-
-
-// let imgPreLoad = document.querySelector('.loader')
-
-// function preLoad(){
-//     imgPreLoad.classList.add('hidden')
-// }
-
-// window.addEventListener('load', preLoad)
-
-
-
 //////////////////////////// serach-Box ////////////////////////////
 
 // const $ = document
@@ -642,7 +624,7 @@ menuMobileIcon.addEventListener('click', openMenu)
 
 let exitBtn = document.querySelector('.nav-option__exit-mobile')
 
-exitBtn.addEventListener('click',  closeShoppingCart)
+exitBtn.addEventListener('click', closeShoppingCart)
 
 
 ////////////////////// open child menu nav mobile /////////////////////////////////
