@@ -14,7 +14,7 @@ function preLoad() {
     setTimeout(() => {
         const loading = document.querySelector('.loader')
         loading.remove()
-    }, 2000);
+    }, 1000);
 }
 
 window.addEventListener("DOMContentLoaded", preLoad)
