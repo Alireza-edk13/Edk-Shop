@@ -21,7 +21,7 @@ footer.insertAdjacentHTML('beforeend', `   <section class="newsleter-box">
         <div class="newsleter-box-input">
             <form action="" class="newsleter-form">
                 <input type="text" placeholder="Enter Your Email" class="newsleter-input">
-                <button type="submit" class="newsleter-btn">Subscribe</button>
+                <button class="newsleter-btn">Subscribe</button>
             </form>
         </div>
 
