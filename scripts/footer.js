@@ -19,9 +19,9 @@ footer.insertAdjacentHTML('beforeend', `   <section class="newsleter-box">
         <p class="newsleter-inner">...and receive $25 coupon for first shopping.</p>
 
         <div class="newsleter-box-input">
-            <form action="" class="newsleter-form">
+            <form class="newsleter-form">
                 <input type="text" placeholder="Enter Your Email" class="newsleter-input">
-                <button class="newsleter-btn">Subscribe</button>
+                <div class="newsleter-btn">Subscribe</div>
             </form>
         </div>
 
