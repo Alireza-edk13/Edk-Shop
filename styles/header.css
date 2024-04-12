@@ -628,6 +628,7 @@
     bottom: 7rem;
     left: 0;
     right: 0;
+    background-color: var(--main-txt-color-white);
 }
 
 .item-sc-summery {
