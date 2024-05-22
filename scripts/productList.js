@@ -319,6 +319,7 @@ window.addEventListener('load', loadLocalStorage)
 
 // ========================== range fillter  ================================
 
+const productListTotall = document.querySelector('.productList-totall span')
 
 
 const rangeInput = document.querySelectorAll(".range-input input"),
@@ -369,6 +370,7 @@ function fillterProduct() {
         return product.price >= priceInput[0].value && product.price <= priceInput[1].value
     })
     createProductCart(productBasket)
+    productListTotall.innerHTML = productBasket.length
 }
 
 fillterBtn.addEventListener('click', fillterProduct)
@@ -393,13 +395,16 @@ sortOptionLi.forEach((option) => {
         let productBasket = []
         if (option.innerHTML === 'Price: Low to High') {
             productBasket = productArray.sort((a, b) => a.price - b.price)
-        } else if(option.innerHTML === 'Price: High to Low') {
+            productListTotall.innerHTML = productBasket.length
+        } else if (option.innerHTML === 'Price: High to Low') {
             productBasket = productArray.sort((a, b) => a.price - b.price).reverse()
-        }else{
+            productListTotall.innerHTML = productBasket.length
+        } else {
             productBasket = productArray.slice(e.target.dataset.start, e.target.dataset.end)
+            productListTotall.innerHTML = productBasket.length
         }
         createProductCart(productBasket)
-        
+
     })
 })
 

@@ -49,6 +49,7 @@ let shoppingCartBox = document.querySelector('.shoppingCart-box')
 let shoppingCartEmpty = document.querySelector('.shoppingCart-Empty')
 let shopCartContentEmpty = document.querySelector('.shopCart-contentEmpty')
 let shopCartSummery = document.querySelector('.shopCart-summery')
+let checkoutOpacity = document.querySelector('.checkoutOpacity')
 
 
 //// this func is check userbasket is empty or not
@@ -56,6 +57,7 @@ function userBasketIsEmpty(userBasket) {
     shoppingCartBox.style.display = 'none'
     shoppingCartEmpty.style.display = 'flex'
     shopCartContentEmpty.style.display = 'flex'
+    checkoutOpacity.style.opacity = '0.2'
     shopCartSummery.style.display = 'none'
     setLocalStorage(userBasket)
     userBasketLangth(userBasket)

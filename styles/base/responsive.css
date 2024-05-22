@@ -331,8 +331,14 @@
     .info-about-process__box {
         text-align: center;
     }
-    .form-rat{
+
+    .form-rat {
         margin-left: 0;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
     }
 }
 
@@ -347,9 +353,10 @@
         max-width: 100%;
     }
 
-    *{
+    * {
         cursor: default !important;
     }
+
     /* nav */
     .nav-option__img {
         width: 2.9rem;
@@ -573,12 +580,13 @@
     .sort-option {
         top: 8rem;
     }
-    .base-form{
+
+    .base-form {
         width: 100%;
         border-bottom: none;
         box-shadow: none;
     }
-   
+
 }
 
 @media only screen and (max-width: 430px) {
@@ -715,6 +723,7 @@
     .toggle_info {
         font-size: 1.2rem;
     }
+
     .social-login-list a {
         padding: 0.5rem 0.5rem;
         margin: 0 0.1rem;

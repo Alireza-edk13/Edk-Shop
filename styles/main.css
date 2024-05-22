@@ -9,6 +9,19 @@
     bottom: -1rem;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+    padding: 2.2rem !important;
+    background-color: var(--main-color) !important;
+    color: var(--main-txt-color-white) !important;
+    border-radius: 100%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2rem !important;
+}
+
 /* ======================== main ========================== */
 
 .main {
