@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import "./variables.css";
 @import "./default.css";
 @import "./header.css";
@@ -17,8 +24,12 @@
 .pages {
     background-color: var(--main-backgrond-color);
     height: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .pages span {
@@ -30,6 +41,8 @@
 .pages a {
     color: #6e6e6e;
     font-family: 'Roboto Medium';
+    -webkit-transition: color 250ms ease;
+    -o-transition: color 250ms ease;
     transition: color 250ms ease;
 }
 
@@ -84,9 +97,15 @@
 }
 
 .dis-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 1.4rem;
     padding-bottom: 1rem;
 }
@@ -94,9 +113,15 @@
 /* =========== midbox ================ */
 
 .shop-single-midBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     border-bottom: 1px solid #eee;
     border-top: 1px solid #eee;
     padding: 1rem 0;
@@ -149,8 +174,12 @@
 /* ======= color ========= */
 
 .shop-single-color {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .shop-single-color {
@@ -158,9 +187,15 @@
 }
 
 .shop-single-color-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .shop-single-color-filter li {
@@ -224,14 +259,24 @@
 
 .shop-single-size {
     margin-top: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .shop-single-size-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .shop-single-size-filter li {
@@ -241,10 +286,16 @@
     margin: 0 0.5rem;
     border-radius: 0.5rem;
     font-size: 1.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .size-active {
@@ -255,8 +306,12 @@
 /* ===================== shop btns ================= */
 
 .shop-single-add {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 3rem;
 }
 
@@ -266,7 +321,9 @@
 }
 .shopSingle-removeAndnum{
     display: none;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .shop-single-btn-remove{
     background-color: red;
@@ -280,8 +337,15 @@
 }
 
 .shop-single-options {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
+    -o-transition: opacity 0.3s ease, visibility 0.3s ease;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     position: absolute;
     z-index: 2;
@@ -293,12 +357,20 @@
     background-color: var(--main-backgrond-color);
     width: 4.5rem;
     height: 4.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 1rem;
     cursor: pointer;
     margin: 0.4rem;
+    -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
+    -o-transition: opacity 0.3s ease, visibility 0.3s ease;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
@@ -306,6 +378,8 @@
     color: var(--main-txt-color-black);
     width: 2rem;
     height: 2rem;
+    -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
+    -o-transition: opacity 0.3s ease, visibility 0.3s ease;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
@@ -318,7 +392,9 @@
 }
 
 .not-jus {
-    justify-content: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
 }
 
 .shop-single-add .number-box-reduce,
@@ -369,16 +445,23 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .swiper {
@@ -400,7 +483,8 @@
 
 .mySwiper {
     height: 20%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 10px 0;
 }
 
@@ -418,7 +502,8 @@
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .swiper-button-next {
@@ -437,8 +522,12 @@
 }
 
 .des-btnBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-bottom: 1rem;
     border-bottom: 0.2rem solid #eee;
 }
@@ -461,6 +550,8 @@
     width: 100%;
     visibility: hidden;
     opacity: 0;
+    -webkit-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
     transition: all 250ms ease;
 }
 
@@ -523,9 +614,15 @@
 }
 
 .blog-comments-single {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: start;
-    align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-top: 50px;
     position: relative;
     background-color: var(--main-backgrond-color);
@@ -661,7 +758,11 @@
     background-position: center;
     background-size: contain;
     border: 1px solid rgba(0, 0, 0, 0.25);
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
@@ -675,8 +776,12 @@
 }
 
 .float-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     margin-right: 5rem;
 }
 

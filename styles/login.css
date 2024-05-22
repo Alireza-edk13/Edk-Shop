@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import "./variables.css";
 @import "./default.css";
 
@@ -11,8 +18,12 @@ body{
 /* ================= pages ================== */
 .pages {
     height: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 0rem;
     margin-bottom: 0;
 }
@@ -26,6 +37,8 @@ body{
 .pages a {
     color: var(--main-txt-color-white);
     font-family: 'Roboto Medium';
+    -webkit-transition: color 250ms ease;
+    -o-transition: color 250ms ease;
     transition: color 250ms ease;
 }
 
@@ -36,24 +49,43 @@ body{
 /* ================= login ===================== */
 
 .form-box{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0;
     background-color: var(--main-color);
 }
 
 .logo-login {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 4rem;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .logo-login a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 3.7rem;
     color: var(--main-color);
     font-family: 'Roboto Medium';
@@ -76,7 +108,8 @@ body{
     height: 100%;
     color: var(--main-txt-color-black);
     padding: 3rem;
-    box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+    -webkit-box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+            box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
     border-radius: 1rem;
     border-top: 0.2rem solid var(--main-color);
     border-bottom: 0.2rem solid var(--main-color);
@@ -99,8 +132,13 @@ button {
 
 .box {
     margin-bottom: 2.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: relative;
     color: var(--main-color);
 }
@@ -124,6 +162,22 @@ button {
     letter-spacing: 0.32px;
 }
 
+.txt::-webkit-input-placeholder {
+    color: #687188;
+}
+
+.txt::-moz-placeholder {
+    color: #687188;
+}
+
+.txt:-ms-input-placeholder {
+    color: #687188;
+}
+
+.txt::-ms-input-placeholder {
+    color: #687188;
+}
+
 .txt::placeholder {
     color: #687188;
 }
@@ -145,9 +199,15 @@ button {
     display: block;
 }
 .box-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .box-bottom span a {
@@ -155,8 +215,12 @@ button {
 }
 
 .custome-checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .custome-checkbox input {
@@ -204,6 +268,8 @@ button {
 .social-login-list .fb-auth {
     border: 2px solid #3B5998;
     color: #3B5998;
+    -webkit-transition: all 180ms ease 80ms;
+    -o-transition: all 180ms ease 80ms;
     transition: all 180ms ease 80ms;
 }
 .social-login-list .fb-auth:hover {
@@ -213,6 +279,8 @@ button {
 
 .social-login-list .gl-auth {
     border: 2px solid #DD4B39;
+    -webkit-transition: all 180ms ease 80ms;
+    -o-transition: all 180ms ease 80ms;
     transition: all 180ms ease 80ms;
     color: #DD4B39;
 }
@@ -223,6 +291,8 @@ button {
 
 .social-login-list .tw-auth {
     border: 2px solid #55ACEE;
+    -webkit-transition: all 180ms ease 80ms;
+    -o-transition: all 180ms ease 80ms;
     transition: all 180ms ease 80ms;
     color: #55ACEE;
 }

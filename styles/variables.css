@@ -1,12 +1,1 @@
-:root {
-    /* #11B76B */
-    /* #3286e0 */
-    /* #7B1FA2 */
-    --body-font: 'Roboto', sans-serif;
-    --main-color:  #7B1FA2;
-    --main-txt-color-black: #272729;
-    --main-txt-color-white: #fff;
-    --gray: #757F95;
-    --main-backgrond-color:#f4f5f9;
-    --yellow: #fad505;
-}
+:root{--body-font:'Roboto',sans-serif;--main-color:#7B1FA2;--main-txt-color-black:#272729;--main-txt-color-white:#fff;--gray:#757F95;--main-backgrond-color:#f4f5f9;--yellow:#fad505}
